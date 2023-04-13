@@ -2,7 +2,7 @@
   "name": "@adcimon/react-components",
   "version": "1.0.0",
   "private": false,
-  "description": "My React components",
+  "description": "Custom React components",
   "author": "adcimon",
   "license": "MIT",
   "main": "src/index.ts",
