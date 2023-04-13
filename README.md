@@ -1,3 +1,3 @@
 # React Components
 
-Custom React components.
+Collection of React components.
