@@ -6,7 +6,9 @@
   "author": "adcimon",
   "license": "MIT",
   "main": "src/index.ts",
-  "files": ["src/**/*"],
+  "files": [
+    "src/**/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +17,7 @@
     "url": "git+https://github.com/adcimon/react-components.git"
   },
   "publishConfig": {
-	"access": "public"
+    "access": "public"
   },
   "keywords": [
     "react",
@@ -24,5 +26,14 @@
   "bugs": {
     "url": "https://github.com/adcimon/react-components/issues"
   },
-  "homepage": "https://github.com/adcimon/react-components#readme"
+  "homepage": "https://github.com/adcimon/react-components#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.4"
+  }
 }
