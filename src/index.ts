@@ -1,6 +1,4 @@
 import './styles/Main.css';
-import './styles/Font.css';
-import './styles/Theme.css';
 
 export * from './components/Button/Button';
 export * from './components/Card/Card';
