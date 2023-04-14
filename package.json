@@ -9,8 +9,12 @@
   "files": [
     "src/**/*"
   ],
+  "directories": {
+    "src": "src"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"clean": "python clean.py",
+    "build": "npm run clean && python build.py"
   },
   "repository": {
     "type": "git",
@@ -27,13 +31,11 @@
     "url": "https://github.com/adcimon/react-components/issues"
   },
   "homepage": "https://github.com/adcimon/react-components#readme",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "devDependencies": {
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.0.4"
   }
 }
