@@ -1,6 +1,5 @@
 @import "Animation.css";
 @import "Background.css";
-@import "Base.css";
 @import "Border.css";
 @import "Divide.css";
 @import "Layout.css";
@@ -13,3 +12,5 @@
 @import "Transform.css";
 @import "Transition.css";
 @import "Utils.css";
+
+@import "Base.css";
