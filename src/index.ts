@@ -55,6 +55,8 @@ import { BookmarkOutline } from './components/Icon/BookmarkOutline';
 import { BookmarkSlashOutline } from './components/Icon/BookmarkSlashOutline';
 import { BookmarkSlashSolid } from './components/Icon/BookmarkSlashSolid';
 import { BookmarkSolid } from './components/Icon/BookmarkSolid';
+import { CameraOutline } from './components/Icon/CameraOutline';
+import { CameraSolid } from './components/Icon/CameraSolid';
 import { ChartBarOutline } from './components/Icon/ChartBarOutline';
 import { ChartBarSolid } from './components/Icon/ChartBarSolid';
 import { ChevronDoubleDownOutline } from './components/Icon/ChevronDoubleDownOutline';
@@ -232,6 +234,8 @@ export const Icons =
 	BookmarkSlashOutline,
 	BookmarkSlashSolid,
 	BookmarkSolid,
+	CameraOutline,
+	CameraSolid,
 	ChartBarOutline,
 	ChartBarSolid,
 	ChartPieOutline,
