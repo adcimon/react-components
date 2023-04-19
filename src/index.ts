@@ -39,6 +39,8 @@ import { AdjustmentsVerticalOutline } from './components/Icon/AdjustmentsVertica
 import { AdjustmentsVerticalSolid } from './components/Icon/AdjustmentsVerticalSolid';
 import { ArrowLeftOnRectangleOutline } from './components/Icon/ArrowLeftOnRectangleOutline';
 import { ArrowLeftOnRectangleSolid } from './components/Icon/ArrowLeftOnRectangleSolid';
+import { AtSymbolOutline } from './components/Icon/AtSymbolOutline';
+import { AtSymbolSolid } from './components/Icon/AtSymbolSolid';
 import { BackwardOutline } from './components/Icon/BackwardOutline';
 import { BackwardSolid } from './components/Icon/BackwardSolid';
 import { Bars3Outline } from './components/Icon/Bars3Outline';
@@ -55,6 +57,24 @@ import { BookmarkSlashSolid } from './components/Icon/BookmarkSlashSolid';
 import { BookmarkSolid } from './components/Icon/BookmarkSolid';
 import { ChartBarOutline } from './components/Icon/ChartBarOutline';
 import { ChartBarSolid } from './components/Icon/ChartBarSolid';
+import { ChevronDoubleDownOutline } from './components/Icon/ChevronDoubleDownOutline';
+import { ChevronDoubleDownSolid } from './components/Icon/ChevronDoubleDownSolid';
+import { ChevronDoubleLeftOutline } from './components/Icon/ChevronDoubleLeftOutline';
+import { ChevronDoubleLeftSolid } from './components/Icon/ChevronDoubleLeftSolid';
+import { ChevronDoubleRightOutline } from './components/Icon/ChevronDoubleRightOutline';
+import { ChevronDoubleRightSolid } from './components/Icon/ChevronDoubleRightSolid';
+import { ChevronDoubleUpOutline } from './components/Icon/ChevronDoubleUpOutline';
+import { ChevronDoubleUpSolid } from './components/Icon/ChevronDoubleUpSolid';
+import { ChevronDownOutline } from './components/Icon/ChevronDownOutline';
+import { ChevronDownSolid } from './components/Icon/ChevronDownSolid';
+import { ChevronLeftOutline } from './components/Icon/ChevronLeftOutline';
+import { ChevronLeftSolid } from './components/Icon/ChevronLeftSolid';
+import { ChevronRightOutline } from './components/Icon/ChevronRightOutline';
+import { ChevronRightSolid } from './components/Icon/ChevronRightSolid';
+import { ChevronUpDownOutline } from './components/Icon/ChevronUpDownOutline';
+import { ChevronUpDownSolid } from './components/Icon/ChevronUpDownSolid';
+import { ChevronUpOutline } from './components/Icon/ChevronUpOutline';
+import { ChevronUpSolid } from './components/Icon/ChevronUpSolid';
 import { ChartPieOutline } from './components/Icon/ChartPieOutline';
 import { ChartPieSolid } from './components/Icon/ChartPieSolid';
 import { CodeBracketOutline } from './components/Icon/CodeBracketOutline';
@@ -196,6 +216,8 @@ export const Icons =
 	AdjustmentsVerticalSolid,
 	ArrowLeftOnRectangleOutline,
 	ArrowLeftOnRectangleSolid,
+	AtSymbolOutline,
+	AtSymbolSolid,
 	BackwardOutline,
 	BackwardSolid,
 	Bars3Outline,
@@ -214,6 +236,24 @@ export const Icons =
 	ChartBarSolid,
 	ChartPieOutline,
 	ChartPieSolid,
+	ChevronDoubleDownOutline,
+	ChevronDoubleDownSolid,
+	ChevronDoubleLeftOutline,
+	ChevronDoubleLeftSolid,
+	ChevronDoubleRightOutline,
+	ChevronDoubleRightSolid,
+	ChevronDoubleUpOutline,
+	ChevronDoubleUpSolid,
+	ChevronDownOutline,
+	ChevronDownSolid,
+	ChevronLeftOutline,
+	ChevronLeftSolid,
+	ChevronRightOutline,
+	ChevronRightSolid,
+	ChevronUpDownOutline,
+	ChevronUpDownSolid,
+	ChevronUpOutline,
+	ChevronUpSolid,
 	CodeBracketOutline,
 	CodeBracketSolid,
 	CodeBracketSquareOutline,
