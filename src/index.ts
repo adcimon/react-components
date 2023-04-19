@@ -39,6 +39,8 @@ import { AdjustmentsVerticalOutline } from './components/Icon/AdjustmentsVertica
 import { AdjustmentsVerticalSolid } from './components/Icon/AdjustmentsVerticalSolid';
 import { ArrowLeftOnRectangleOutline } from './components/Icon/ArrowLeftOnRectangleOutline';
 import { ArrowLeftOnRectangleSolid } from './components/Icon/ArrowLeftOnRectangleSolid';
+import { BackwardOutline } from './components/Icon/BackwardOutline';
+import { BackwardSolid } from './components/Icon/BackwardSolid';
 import { Bars3Outline } from './components/Icon/Bars3Outline';
 import { Bars3Solid } from './components/Icon/Bars3Solid';
 import { BellAlertOutline } from './components/Icon/BellAlertOutline';
@@ -71,6 +73,8 @@ import { EllipsisHorizontalOutline } from './components/Icon/EllipsisHorizontalO
 import { EllipsisHorizontalSolid } from './components/Icon/EllipsisHorizontalSolid';
 import { EllipsisVerticalOutline } from './components/Icon/EllipsisVerticalOutline';
 import { EllipsisVerticalSolid } from './components/Icon/EllipsisVerticalSolid';
+import { EnvelopeOpenOutline } from './components/Icon/EnvelopeOpenOutline';
+import { EnvelopeOpenSolid } from './components/Icon/EnvelopeOpenSolid';
 import { EnvelopeOutline } from './components/Icon/EnvelopeOutline';
 import { EnvelopeSolid } from './components/Icon/EnvelopeSolid';
 import { EyeOutline } from './components/Icon/EyeOutline';
@@ -83,6 +87,8 @@ import { FaceSmileOutline } from './components/Icon/FaceSmileOutline';
 import { FaceSmileSolid } from './components/Icon/FaceSmileSolid';
 import { FlagOutline } from './components/Icon/FlagOutline';
 import { FlagSolid } from './components/Icon/FlagSolid';
+import { ForwardOutline } from './components/Icon/ForwardOutline';
+import { ForwardSolid } from './components/Icon/ForwardSolid';
 import { GiftOutline } from './components/Icon/GiftOutline';
 import { GiftSolid } from './components/Icon/GiftSolid';
 import { GlobeAltOutline } from './components/Icon/GlobeAltOutline';
@@ -99,7 +105,6 @@ import { HeartOutline } from './components/Icon/HeartOutline';
 import { HeartSolid } from './components/Icon/HeartSolid';
 import { HomeOutline } from './components/Icon/HomeOutline';
 import { HomeSolid } from './components/Icon/HomeSolid';
-import { IIconProps } from './components/Icon/IIconProps';
 import { KeyOutline } from './components/Icon/KeyOutline';
 import { KeySolid } from './components/Icon/KeySolid';
 import { LanguageOutline } from './components/Icon/LanguageOutline';
@@ -116,10 +121,16 @@ import { NoSymbolOutline } from './components/Icon/NoSymbolOutline';
 import { NoSymbolSolid } from './components/Icon/NoSymbolSolid';
 import { PaperAirplaneOutline } from './components/Icon/PaperAirplaneOutline';
 import { PaperAirplaneSolid } from './components/Icon/PaperAirplaneSolid';
+import { PauseOutline } from './components/Icon/PauseOutline';
+import { PauseSolid } from './components/Icon/PauseSolid';
 import { PencilOutline } from './components/Icon/PencilOutline';
 import { PencilSolid } from './components/Icon/PencilSolid';
 import { PencilSquareOutline } from './components/Icon/PencilSquareOutline';
 import { PencilSquareSolid } from './components/Icon/PencilSquareSolid';
+import { PlayOutline } from './components/Icon/PlayOutline';
+import { PlayPauseOutline } from './components/Icon/PlayPauseOutline';
+import { PlayPauseSolid } from './components/Icon/PlayPauseSolid';
+import { PlaySolid } from './components/Icon/PlaySolid';
 import { PlusOutline } from './components/Icon/PlusOutline';
 import { PlusSmallOutline } from './components/Icon/PlusSmallOutline';
 import { PlusSmallSolid } from './components/Icon/PlusSmallSolid';
@@ -150,6 +161,8 @@ import { Square2StackOutline } from './components/Icon/Square2StackOutline';
 import { Square2StackSolid } from './components/Icon/Square2StackSolid';
 import { StarOutline } from './components/Icon/StarOutline';
 import { StarSolid } from './components/Icon/StarSolid';
+import { StopOutline } from './components/Icon/StopOutline';
+import { StopSolid } from './components/Icon/StopSolid';
 import { SunOutline } from './components/Icon/SunOutline';
 import { SunSolid } from './components/Icon/SunSolid';
 import { TableCellsOutline } from './components/Icon/TableCellsOutline';
@@ -168,6 +181,10 @@ import { UserOutline } from './components/Icon/UserOutline';
 import { UserSolid } from './components/Icon/UserSolid';
 import { UsersOutline } from './components/Icon/UsersOutline';
 import { UsersSolid } from './components/Icon/UsersSolid';
+import { VideoCameraOutline } from './components/Icon/VideoCameraOutline';
+import { VideoCameraSlashOutline } from './components/Icon/VideoCameraSlashOutline';
+import { VideoCameraSlashSolid } from './components/Icon/VideoCameraSlashSolid';
+import { VideoCameraSolid } from './components/Icon/VideoCameraSolid';
 import { WifiOutline } from './components/Icon/WifiOutline';
 import { WifiSolid } from './components/Icon/WifiSolid';
 
@@ -179,6 +196,8 @@ export const Icons =
 	AdjustmentsVerticalSolid,
 	ArrowLeftOnRectangleOutline,
 	ArrowLeftOnRectangleSolid,
+	BackwardOutline,
+	BackwardSolid,
 	Bars3Outline,
 	Bars3Solid,
 	BellAlertOutline,
@@ -211,6 +230,8 @@ export const Icons =
 	EllipsisHorizontalSolid,
 	EllipsisVerticalOutline,
 	EllipsisVerticalSolid,
+	EnvelopeOpenOutline,
+	EnvelopeOpenSolid,
 	EnvelopeOutline,
 	EnvelopeSolid,
 	EyeOutline,
@@ -223,6 +244,8 @@ export const Icons =
 	FaceSmileSolid,
 	FlagOutline,
 	FlagSolid,
+	ForwardOutline,
+	ForwardSolid,
 	GiftOutline,
 	GiftSolid,
 	GlobeAltOutline,
@@ -255,10 +278,16 @@ export const Icons =
 	NoSymbolSolid,
 	PaperAirplaneOutline,
 	PaperAirplaneSolid,
+	PauseOutline,
+	PauseSolid,
 	PencilOutline,
 	PencilSolid,
 	PencilSquareOutline,
 	PencilSquareSolid,
+	PlayOutline,
+	PlayPauseOutline,
+	PlayPauseSolid,
+	PlaySolid,
 	PlusOutline,
 	PlusSmallOutline,
 	PlusSmallSolid,
@@ -289,6 +318,8 @@ export const Icons =
 	Square2StackSolid,
 	StarOutline,
 	StarSolid,
+	StopOutline,
+	StopSolid,
 	SunOutline,
 	SunSolid,
 	TableCellsOutline,
@@ -307,6 +338,10 @@ export const Icons =
 	UserSolid,
 	UsersOutline,
 	UsersSolid,
+	VideoCameraOutline,
+	VideoCameraSlashOutline,
+	VideoCameraSlashSolid,
+	VideoCameraSolid,
 	WifiOutline,
 	WifiSolid
 };
