@@ -33,140 +33,280 @@ export * from './components/Tag/Tag';
 export * from './components/TextArea/TextArea';
 export * from './components/TextInput/TextInput';
 
-export * from './components/Icon/AdjustmentsHorizontalOutline';
-export * from './components/Icon/AdjustmentsHorizontalSolid';
-export * from './components/Icon/AdjustmentsVerticalOutline';
-export * from './components/Icon/AdjustmentsVerticalSolid';
-export * from './components/Icon/ArrowLeftOnRectangleOutline';
-export * from './components/Icon/ArrowLeftOnRectangleSolid';
-export * from './components/Icon/Bars3Outline';
-export * from './components/Icon/Bars3Solid';
-export * from './components/Icon/BellAlertOutline';
-export * from './components/Icon/BellAlertSolid';
-export * from './components/Icon/BellOutline';
-export * from './components/Icon/BellSlashOutline';
-export * from './components/Icon/BellSlashSolid';
-export * from './components/Icon/BellSolid';
-export * from './components/Icon/BookmarkOutline';
-export * from './components/Icon/BookmarkSlashOutline';
-export * from './components/Icon/BookmarkSlashSolid';
-export * from './components/Icon/BookmarkSolid';
-export * from './components/Icon/ChartBarOutline';
-export * from './components/Icon/ChartBarSolid';
-export * from './components/Icon/ChartPieOutline';
-export * from './components/Icon/ChartPieSolid';
-export * from './components/Icon/CodeBracketOutline';
-export * from './components/Icon/CodeBracketSolid';
-export * from './components/Icon/CodeBracketSquareOutline';
-export * from './components/Icon/CodeBracketSquareSolid';
-export * from './components/Icon/Cog6ToothOutline';
-export * from './components/Icon/Cog6ToothSolid';
-export * from './components/Icon/CommandLineOutline';
-export * from './components/Icon/CommandLineSolid';
-export * from './components/Icon/ComputerDesktopOutline';
-export * from './components/Icon/ComputerDesktopSolid';
-export * from './components/Icon/CubeOutline';
-export * from './components/Icon/CubeSolid';
-export * from './components/Icon/EllipsisHorizontalOutline';
-export * from './components/Icon/EllipsisHorizontalSolid';
-export * from './components/Icon/EllipsisVerticalOutline';
-export * from './components/Icon/EllipsisVerticalSolid';
-export * from './components/Icon/EnvelopeOutline';
-export * from './components/Icon/EnvelopeSolid';
-export * from './components/Icon/EyeOutline';
-export * from './components/Icon/EyeSlashOutline';
-export * from './components/Icon/EyeSlashSolid';
-export * from './components/Icon/EyeSolid';
-export * from './components/Icon/FaceFrownOutline';
-export * from './components/Icon/FaceFrownSolid';
-export * from './components/Icon/FaceSmileOutline';
-export * from './components/Icon/FaceSmileSolid';
-export * from './components/Icon/FlagOutline';
-export * from './components/Icon/FlagSolid';
-export * from './components/Icon/GiftOutline';
-export * from './components/Icon/GiftSolid';
-export * from './components/Icon/GlobeAltOutline';
-export * from './components/Icon/GlobeAltSolid';
-export * from './components/Icon/HandRaisedOutline';
-export * from './components/Icon/HandRaisedSolid';
-export * from './components/Icon/HandThumbDownOutline';
-export * from './components/Icon/HandThumbDownSolid';
-export * from './components/Icon/HandThumbUpOutline';
-export * from './components/Icon/HandThumbUpSolid';
-export * from './components/Icon/HashtagOutline';
-export * from './components/Icon/HashtagSolid';
-export * from './components/Icon/HeartOutline';
-export * from './components/Icon/HeartSolid';
-export * from './components/Icon/HomeOutline';
-export * from './components/Icon/HomeSolid';
-export * from './components/Icon/IIconProps';
-export * from './components/Icon/KeyOutline';
-export * from './components/Icon/KeySolid';
-export * from './components/Icon/LanguageOutline';
-export * from './components/Icon/LanguageSolid';
-export * from './components/Icon/LinkOutline';
-export * from './components/Icon/LinkSolid';
-export * from './components/Icon/MinusOutline';
-export * from './components/Icon/MinusSmallOutline';
-export * from './components/Icon/MinusSmallSolid';
-export * from './components/Icon/MinusSolid';
-export * from './components/Icon/MoonOutline';
-export * from './components/Icon/MoonSolid';
-export * from './components/Icon/NoSymbolOutline';
-export * from './components/Icon/NoSymbolSolid';
-export * from './components/Icon/PaperAirplaneOutline';
-export * from './components/Icon/PaperAirplaneSolid';
-export * from './components/Icon/PencilOutline';
-export * from './components/Icon/PencilSolid';
-export * from './components/Icon/PencilSquareOutline';
-export * from './components/Icon/PencilSquareSolid';
-export * from './components/Icon/PlusOutline';
-export * from './components/Icon/PlusSmallOutline';
-export * from './components/Icon/PlusSmallSolid';
-export * from './components/Icon/PlusSolid';
-export * from './components/Icon/PowerOutline';
-export * from './components/Icon/PowerSolid';
-export * from './components/Icon/QrCodeOutline';
-export * from './components/Icon/QrCodeSolid';
-export * from './components/Icon/RectangleStackOutline';
-export * from './components/Icon/RectangleStackSolid';
-export * from './components/Icon/RocketLaunchOutline';
-export * from './components/Icon/RocketLaunchSolid';
-export * from './components/Icon/ShareOutline';
-export * from './components/Icon/ShareSolid';
-export * from './components/Icon/ShoppingBagOutline';
-export * from './components/Icon/ShoppingBagSolid';
-export * from './components/Icon/ShoppingCartOutline';
-export * from './components/Icon/ShoppingCartSolid';
-export * from './components/Icon/SignalOutline';
-export * from './components/Icon/SignalSlashOutline';
-export * from './components/Icon/SignalSlashSolid';
-export * from './components/Icon/SignalSolid';
-export * from './components/Icon/SpeakerWaveOutline';
-export * from './components/Icon/SpeakerWaveSolid';
-export * from './components/Icon/SpeakerXMarkOutline';
-export * from './components/Icon/SpeakerXMarkSolid';
-export * from './components/Icon/Square2StackOutline';
-export * from './components/Icon/Square2StackSolid';
-export * from './components/Icon/StarOutline';
-export * from './components/Icon/StarSolid';
-export * from './components/Icon/SunOutline';
-export * from './components/Icon/SunSolid';
-export * from './components/Icon/TableCellsOutline';
-export * from './components/Icon/TableCellsSolid';
-export * from './components/Icon/TagOutline';
-export * from './components/Icon/TagSolid';
-export * from './components/Icon/TrashOutline';
-export * from './components/Icon/TrashSolid';
-export * from './components/Icon/TrophyOutline';
-export * from './components/Icon/TrophySolid';
-export * from './components/Icon/TvOutline';
-export * from './components/Icon/TvSolid';
-export * from './components/Icon/UserGroupOutline';
-export * from './components/Icon/UserGroupSolid';
-export * from './components/Icon/UserOutline';
-export * from './components/Icon/UserSolid';
-export * from './components/Icon/UsersOutline';
-export * from './components/Icon/UsersSolid';
-export * from './components/Icon/WifiOutline';
-export * from './components/Icon/WifiSolid';
+import { AdjustmentsHorizontalOutline } from './components/Icon/AdjustmentsHorizontalOutline';
+import { AdjustmentsHorizontalSolid } from './components/Icon/AdjustmentsHorizontalSolid';
+import { AdjustmentsVerticalOutline } from './components/Icon/AdjustmentsVerticalOutline';
+import { AdjustmentsVerticalSolid } from './components/Icon/AdjustmentsVerticalSolid';
+import { ArrowLeftOnRectangleOutline } from './components/Icon/ArrowLeftOnRectangleOutline';
+import { ArrowLeftOnRectangleSolid } from './components/Icon/ArrowLeftOnRectangleSolid';
+import { Bars3Outline } from './components/Icon/Bars3Outline';
+import { Bars3Solid } from './components/Icon/Bars3Solid';
+import { BellAlertOutline } from './components/Icon/BellAlertOutline';
+import { BellAlertSolid } from './components/Icon/BellAlertSolid';
+import { BellOutline } from './components/Icon/BellOutline';
+import { BellSlashOutline } from './components/Icon/BellSlashOutline';
+import { BellSlashSolid } from './components/Icon/BellSlashSolid';
+import { BellSolid } from './components/Icon/BellSolid';
+import { BookmarkOutline } from './components/Icon/BookmarkOutline';
+import { BookmarkSlashOutline } from './components/Icon/BookmarkSlashOutline';
+import { BookmarkSlashSolid } from './components/Icon/BookmarkSlashSolid';
+import { BookmarkSolid } from './components/Icon/BookmarkSolid';
+import { ChartBarOutline } from './components/Icon/ChartBarOutline';
+import { ChartBarSolid } from './components/Icon/ChartBarSolid';
+import { ChartPieOutline } from './components/Icon/ChartPieOutline';
+import { ChartPieSolid } from './components/Icon/ChartPieSolid';
+import { CodeBracketOutline } from './components/Icon/CodeBracketOutline';
+import { CodeBracketSolid } from './components/Icon/CodeBracketSolid';
+import { CodeBracketSquareOutline } from './components/Icon/CodeBracketSquareOutline';
+import { CodeBracketSquareSolid } from './components/Icon/CodeBracketSquareSolid';
+import { Cog6ToothOutline } from './components/Icon/Cog6ToothOutline';
+import { Cog6ToothSolid } from './components/Icon/Cog6ToothSolid';
+import { CommandLineOutline } from './components/Icon/CommandLineOutline';
+import { CommandLineSolid } from './components/Icon/CommandLineSolid';
+import { ComputerDesktopOutline } from './components/Icon/ComputerDesktopOutline';
+import { ComputerDesktopSolid } from './components/Icon/ComputerDesktopSolid';
+import { CubeOutline } from './components/Icon/CubeOutline';
+import { CubeSolid } from './components/Icon/CubeSolid';
+import { EllipsisHorizontalOutline } from './components/Icon/EllipsisHorizontalOutline';
+import { EllipsisHorizontalSolid } from './components/Icon/EllipsisHorizontalSolid';
+import { EllipsisVerticalOutline } from './components/Icon/EllipsisVerticalOutline';
+import { EllipsisVerticalSolid } from './components/Icon/EllipsisVerticalSolid';
+import { EnvelopeOutline } from './components/Icon/EnvelopeOutline';
+import { EnvelopeSolid } from './components/Icon/EnvelopeSolid';
+import { EyeOutline } from './components/Icon/EyeOutline';
+import { EyeSlashOutline } from './components/Icon/EyeSlashOutline';
+import { EyeSlashSolid } from './components/Icon/EyeSlashSolid';
+import { EyeSolid } from './components/Icon/EyeSolid';
+import { FaceFrownOutline } from './components/Icon/FaceFrownOutline';
+import { FaceFrownSolid } from './components/Icon/FaceFrownSolid';
+import { FaceSmileOutline } from './components/Icon/FaceSmileOutline';
+import { FaceSmileSolid } from './components/Icon/FaceSmileSolid';
+import { FlagOutline } from './components/Icon/FlagOutline';
+import { FlagSolid } from './components/Icon/FlagSolid';
+import { GiftOutline } from './components/Icon/GiftOutline';
+import { GiftSolid } from './components/Icon/GiftSolid';
+import { GlobeAltOutline } from './components/Icon/GlobeAltOutline';
+import { GlobeAltSolid } from './components/Icon/GlobeAltSolid';
+import { HandRaisedOutline } from './components/Icon/HandRaisedOutline';
+import { HandRaisedSolid } from './components/Icon/HandRaisedSolid';
+import { HandThumbDownOutline } from './components/Icon/HandThumbDownOutline';
+import { HandThumbDownSolid } from './components/Icon/HandThumbDownSolid';
+import { HandThumbUpOutline } from './components/Icon/HandThumbUpOutline';
+import { HandThumbUpSolid } from './components/Icon/HandThumbUpSolid';
+import { HashtagOutline } from './components/Icon/HashtagOutline';
+import { HashtagSolid } from './components/Icon/HashtagSolid';
+import { HeartOutline } from './components/Icon/HeartOutline';
+import { HeartSolid } from './components/Icon/HeartSolid';
+import { HomeOutline } from './components/Icon/HomeOutline';
+import { HomeSolid } from './components/Icon/HomeSolid';
+import { IIconProps } from './components/Icon/IIconProps';
+import { KeyOutline } from './components/Icon/KeyOutline';
+import { KeySolid } from './components/Icon/KeySolid';
+import { LanguageOutline } from './components/Icon/LanguageOutline';
+import { LanguageSolid } from './components/Icon/LanguageSolid';
+import { LinkOutline } from './components/Icon/LinkOutline';
+import { LinkSolid } from './components/Icon/LinkSolid';
+import { MinusOutline } from './components/Icon/MinusOutline';
+import { MinusSmallOutline } from './components/Icon/MinusSmallOutline';
+import { MinusSmallSolid } from './components/Icon/MinusSmallSolid';
+import { MinusSolid } from './components/Icon/MinusSolid';
+import { MoonOutline } from './components/Icon/MoonOutline';
+import { MoonSolid } from './components/Icon/MoonSolid';
+import { NoSymbolOutline } from './components/Icon/NoSymbolOutline';
+import { NoSymbolSolid } from './components/Icon/NoSymbolSolid';
+import { PaperAirplaneOutline } from './components/Icon/PaperAirplaneOutline';
+import { PaperAirplaneSolid } from './components/Icon/PaperAirplaneSolid';
+import { PencilOutline } from './components/Icon/PencilOutline';
+import { PencilSolid } from './components/Icon/PencilSolid';
+import { PencilSquareOutline } from './components/Icon/PencilSquareOutline';
+import { PencilSquareSolid } from './components/Icon/PencilSquareSolid';
+import { PlusOutline } from './components/Icon/PlusOutline';
+import { PlusSmallOutline } from './components/Icon/PlusSmallOutline';
+import { PlusSmallSolid } from './components/Icon/PlusSmallSolid';
+import { PlusSolid } from './components/Icon/PlusSolid';
+import { PowerOutline } from './components/Icon/PowerOutline';
+import { PowerSolid } from './components/Icon/PowerSolid';
+import { QrCodeOutline } from './components/Icon/QrCodeOutline';
+import { QrCodeSolid } from './components/Icon/QrCodeSolid';
+import { RectangleStackOutline } from './components/Icon/RectangleStackOutline';
+import { RectangleStackSolid } from './components/Icon/RectangleStackSolid';
+import { RocketLaunchOutline } from './components/Icon/RocketLaunchOutline';
+import { RocketLaunchSolid } from './components/Icon/RocketLaunchSolid';
+import { ShareOutline } from './components/Icon/ShareOutline';
+import { ShareSolid } from './components/Icon/ShareSolid';
+import { ShoppingBagOutline } from './components/Icon/ShoppingBagOutline';
+import { ShoppingBagSolid } from './components/Icon/ShoppingBagSolid';
+import { ShoppingCartOutline } from './components/Icon/ShoppingCartOutline';
+import { ShoppingCartSolid } from './components/Icon/ShoppingCartSolid';
+import { SignalOutline } from './components/Icon/SignalOutline';
+import { SignalSlashOutline } from './components/Icon/SignalSlashOutline';
+import { SignalSlashSolid } from './components/Icon/SignalSlashSolid';
+import { SignalSolid } from './components/Icon/SignalSolid';
+import { SpeakerWaveOutline } from './components/Icon/SpeakerWaveOutline';
+import { SpeakerWaveSolid } from './components/Icon/SpeakerWaveSolid';
+import { SpeakerXMarkOutline } from './components/Icon/SpeakerXMarkOutline';
+import { SpeakerXMarkSolid } from './components/Icon/SpeakerXMarkSolid';
+import { Square2StackOutline } from './components/Icon/Square2StackOutline';
+import { Square2StackSolid } from './components/Icon/Square2StackSolid';
+import { StarOutline } from './components/Icon/StarOutline';
+import { StarSolid } from './components/Icon/StarSolid';
+import { SunOutline } from './components/Icon/SunOutline';
+import { SunSolid } from './components/Icon/SunSolid';
+import { TableCellsOutline } from './components/Icon/TableCellsOutline';
+import { TableCellsSolid } from './components/Icon/TableCellsSolid';
+import { TagOutline } from './components/Icon/TagOutline';
+import { TagSolid } from './components/Icon/TagSolid';
+import { TrashOutline } from './components/Icon/TrashOutline';
+import { TrashSolid } from './components/Icon/TrashSolid';
+import { TrophyOutline } from './components/Icon/TrophyOutline';
+import { TrophySolid } from './components/Icon/TrophySolid';
+import { TvOutline } from './components/Icon/TvOutline';
+import { TvSolid } from './components/Icon/TvSolid';
+import { UserGroupOutline } from './components/Icon/UserGroupOutline';
+import { UserGroupSolid } from './components/Icon/UserGroupSolid';
+import { UserOutline } from './components/Icon/UserOutline';
+import { UserSolid } from './components/Icon/UserSolid';
+import { UsersOutline } from './components/Icon/UsersOutline';
+import { UsersSolid } from './components/Icon/UsersSolid';
+import { WifiOutline } from './components/Icon/WifiOutline';
+import { WifiSolid } from './components/Icon/WifiSolid';
+
+export const Icons =
+{
+	AdjustmentsHorizontalOutline,
+	AdjustmentsHorizontalSolid,
+	AdjustmentsVerticalOutline,
+	AdjustmentsVerticalSolid,
+	ArrowLeftOnRectangleOutline,
+	ArrowLeftOnRectangleSolid,
+	Bars3Outline,
+	Bars3Solid,
+	BellAlertOutline,
+	BellAlertSolid,
+	BellOutline,
+	BellSlashOutline,
+	BellSlashSolid,
+	BellSolid,
+	BookmarkOutline,
+	BookmarkSlashOutline,
+	BookmarkSlashSolid,
+	BookmarkSolid,
+	ChartBarOutline,
+	ChartBarSolid,
+	ChartPieOutline,
+	ChartPieSolid,
+	CodeBracketOutline,
+	CodeBracketSolid,
+	CodeBracketSquareOutline,
+	CodeBracketSquareSolid,
+	Cog6ToothOutline,
+	Cog6ToothSolid,
+	CommandLineOutline,
+	CommandLineSolid,
+	ComputerDesktopOutline,
+	ComputerDesktopSolid,
+	CubeOutline,
+	CubeSolid,
+	EllipsisHorizontalOutline,
+	EllipsisHorizontalSolid,
+	EllipsisVerticalOutline,
+	EllipsisVerticalSolid,
+	EnvelopeOutline,
+	EnvelopeSolid,
+	EyeOutline,
+	EyeSlashOutline,
+	EyeSlashSolid,
+	EyeSolid,
+	FaceFrownOutline,
+	FaceFrownSolid,
+	FaceSmileOutline,
+	FaceSmileSolid,
+	FlagOutline,
+	FlagSolid,
+	GiftOutline,
+	GiftSolid,
+	GlobeAltOutline,
+	GlobeAltSolid,
+	HandRaisedOutline,
+	HandRaisedSolid,
+	HandThumbDownOutline,
+	HandThumbDownSolid,
+	HandThumbUpOutline,
+	HandThumbUpSolid,
+	HashtagOutline,
+	HashtagSolid,
+	HeartOutline,
+	HeartSolid,
+	HomeOutline,
+	HomeSolid,
+	KeyOutline,
+	KeySolid,
+	LanguageOutline,
+	LanguageSolid,
+	LinkOutline,
+	LinkSolid,
+	MinusOutline,
+	MinusSmallOutline,
+	MinusSmallSolid,
+	MinusSolid,
+	MoonOutline,
+	MoonSolid,
+	NoSymbolOutline,
+	NoSymbolSolid,
+	PaperAirplaneOutline,
+	PaperAirplaneSolid,
+	PencilOutline,
+	PencilSolid,
+	PencilSquareOutline,
+	PencilSquareSolid,
+	PlusOutline,
+	PlusSmallOutline,
+	PlusSmallSolid,
+	PlusSolid,
+	PowerOutline,
+	PowerSolid,
+	QrCodeOutline,
+	QrCodeSolid,
+	RectangleStackOutline,
+	RectangleStackSolid,
+	RocketLaunchOutline,
+	RocketLaunchSolid,
+	ShareOutline,
+	ShareSolid,
+	ShoppingBagOutline,
+	ShoppingBagSolid,
+	ShoppingCartOutline,
+	ShoppingCartSolid,
+	SignalOutline,
+	SignalSlashOutline,
+	SignalSlashSolid,
+	SignalSolid,
+	SpeakerWaveOutline,
+	SpeakerWaveSolid,
+	SpeakerXMarkOutline,
+	SpeakerXMarkSolid,
+	Square2StackOutline,
+	Square2StackSolid,
+	StarOutline,
+	StarSolid,
+	SunOutline,
+	SunSolid,
+	TableCellsOutline,
+	TableCellsSolid,
+	TagOutline,
+	TagSolid,
+	TrashOutline,
+	TrashSolid,
+	TrophyOutline,
+	TrophySolid,
+	TvOutline,
+	TvSolid,
+	UserGroupOutline,
+	UserGroupSolid,
+	UserOutline,
+	UserSolid,
+	UsersOutline,
+	UsersSolid,
+	WifiOutline,
+	WifiSolid
+};
