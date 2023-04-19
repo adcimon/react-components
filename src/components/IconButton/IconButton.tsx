@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IButtonProps
+interface IIconButtonProps
 {
 	icon?: React.ReactNode;
 	disabled?: boolean;
@@ -9,7 +9,7 @@ interface IButtonProps
 	style?: React.CSSProperties;
 }
 
-export class IconButton extends React.Component<IButtonProps>
+export class IconButton extends React.Component<IIconButtonProps>
 {
 	public render = () =>
 	{
