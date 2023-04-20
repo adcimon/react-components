@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ISelectProps
+interface ISelectorProps
 {
 	label?: string;
 	value?: string | number | readonly string[] | undefined;
@@ -11,7 +11,7 @@ interface ISelectProps
 	children?: React.ReactNode;
 }
 
-export class Select extends React.Component<ISelectProps>
+export class Selector extends React.Component<ISelectorProps>
 {
 	public render = () =>
 	{

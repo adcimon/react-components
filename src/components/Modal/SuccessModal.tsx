@@ -25,9 +25,9 @@ export class SuccessModal extends React.Component<ISuccessModalProps>
 					style={this.props.style}>
 					<ModalHeader>
 						<div
-							className='inline-block p-3 mr-4 bg-green-600 rounded-full'>
+							className='inline-block w-8 h-8 mr-4 bg-base-200 rounded-full'>
 							<svg
-								className='w-5 h-5 scale-150'
+								className='w-full h-full scale-150 text-green-500'
 								viewBox='0 0 20 20'
 								fill='currentColor'>
 								<path

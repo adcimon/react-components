@@ -1,12 +1,12 @@
 import './styles/Main.css';
 
 export * from './components/Button/Button';
+export * from './components/Button/IconButton';
 export * from './components/Card/Card';
 export * from './components/Card/DataCard';
 export * from './components/Card/ProfileCard';
 export * from './components/Card/VerticalCard';
 export * from './components/Checkbox/Checkbox';
-export * from './components/IconButton/IconButton';
 export * from './components/Link/Link';
 export * from './components/List/ListItem';
 export * from './components/List/List';
@@ -19,10 +19,10 @@ export * from './components/Modal/SuccessModal';
 export * from './components/Modal/WarningModal';
 export * from './components/Modal/ErrorModal';
 export * from './components/Modal/DialogModal';
-export * from './components/Multiselect/Multiselect';
 export * from './components/ProfileMenu/ProfileMenu';
 export * from './components/RadioButton/RadioButton';
-export * from './components/Select/Select';
+export * from './components/Selector/Multiselector';
+export * from './components/Selector/Selector';
 export * from './components/SignView/SignView';
 export * from './components/Table/Cell';
 export * from './components/Table/Row';
@@ -45,6 +45,12 @@ import { BackwardOutline } from './components/Icon/BackwardOutline';
 import { BackwardSolid } from './components/Icon/BackwardSolid';
 import { Bars3Outline } from './components/Icon/Bars3Outline';
 import { Bars3Solid } from './components/Icon/Bars3Solid';
+import { Battery0Outline } from './components/Icon/Battery0Outline';
+import { Battery0Solid } from './components/Icon/Battery0Solid';
+import { Battery50Outline } from './components/Icon/Battery50Outline';
+import { Battery50Solid } from './components/Icon/Battery50Solid';
+import { Battery100Outline } from './components/Icon/Battery100Outline';
+import { Battery100Solid } from './components/Icon/Battery100Solid';
 import { BellAlertOutline } from './components/Icon/BellAlertOutline';
 import { BellAlertSolid } from './components/Icon/BellAlertSolid';
 import { BellOutline } from './components/Icon/BellOutline';
@@ -55,6 +61,10 @@ import { BookmarkOutline } from './components/Icon/BookmarkOutline';
 import { BookmarkSlashOutline } from './components/Icon/BookmarkSlashOutline';
 import { BookmarkSlashSolid } from './components/Icon/BookmarkSlashSolid';
 import { BookmarkSolid } from './components/Icon/BookmarkSolid';
+import { CalendarDaysOutline } from './components/Icon/CalendarDaysOutline';
+import { CalendarDaysSolid } from './components/Icon/CalendarDaysSolid';
+import { CalendarOutline } from './components/Icon/CalendarOutline';
+import { CalendarSolid } from './components/Icon/CalendarSolid';
 import { CameraOutline } from './components/Icon/CameraOutline';
 import { CameraSolid } from './components/Icon/CameraSolid';
 import { ChartBarOutline } from './components/Icon/ChartBarOutline';
@@ -224,6 +234,12 @@ export const Icons =
 	BackwardSolid,
 	Bars3Outline,
 	Bars3Solid,
+	Battery0Outline,
+	Battery0Solid,
+	Battery50Outline,
+	Battery50Solid,
+	Battery100Outline,
+	Battery100Solid,
 	BellAlertOutline,
 	BellAlertSolid,
 	BellOutline,
@@ -234,6 +250,10 @@ export const Icons =
 	BookmarkSlashOutline,
 	BookmarkSlashSolid,
 	BookmarkSolid,
+	CalendarDaysOutline,
+	CalendarDaysSolid,
+	CalendarOutline,
+	CalendarSolid,
 	CameraOutline,
 	CameraSolid,
 	ChartBarOutline,

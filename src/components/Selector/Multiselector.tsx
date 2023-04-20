@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IMultiselectProps
+interface IMultiselectorProps
 {
 	label?: string;
 	value?: string | number | readonly string[] | undefined;
@@ -11,7 +11,7 @@ interface IMultiselectProps
 	children?: React.ReactNode;
 }
 
-export class Multiselect extends React.Component<IMultiselectProps>
+export class Multiselector extends React.Component<IMultiselectorProps>
 {
 	public render = () =>
 	{
