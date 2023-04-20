@@ -69,6 +69,8 @@ import { CameraOutline } from './components/Icon/CameraOutline';
 import { CameraSolid } from './components/Icon/CameraSolid';
 import { ChartBarOutline } from './components/Icon/ChartBarOutline';
 import { ChartBarSolid } from './components/Icon/ChartBarSolid';
+import { ChartPieOutline } from './components/Icon/ChartPieOutline';
+import { ChartPieSolid } from './components/Icon/ChartPieSolid';
 import { ChevronDoubleDownOutline } from './components/Icon/ChevronDoubleDownOutline';
 import { ChevronDoubleDownSolid } from './components/Icon/ChevronDoubleDownSolid';
 import { ChevronDoubleLeftOutline } from './components/Icon/ChevronDoubleLeftOutline';
@@ -87,8 +89,12 @@ import { ChevronUpDownOutline } from './components/Icon/ChevronUpDownOutline';
 import { ChevronUpDownSolid } from './components/Icon/ChevronUpDownSolid';
 import { ChevronUpOutline } from './components/Icon/ChevronUpOutline';
 import { ChevronUpSolid } from './components/Icon/ChevronUpSolid';
-import { ChartPieOutline } from './components/Icon/ChartPieOutline';
-import { ChartPieSolid } from './components/Icon/ChartPieSolid';
+import { CloudArrowDownOutline } from './components/Icon/CloudArrowDownOutline';
+import { CloudArrowDownSolid } from './components/Icon/CloudArrowDownSolid';
+import { CloudArrowUpOutline } from './components/Icon/CloudArrowUpOutline';
+import { CloudArrowUpSolid } from './components/Icon/CloudArrowUpSolid';
+import { CloudOutline } from './components/Icon/CloudOutline';
+import { CloudSolid } from './components/Icon/CloudSolid';
 import { CodeBracketOutline } from './components/Icon/CodeBracketOutline';
 import { CodeBracketSolid } from './components/Icon/CodeBracketSolid';
 import { CodeBracketSquareOutline } from './components/Icon/CodeBracketSquareOutline';
@@ -109,6 +115,10 @@ import { EnvelopeOpenOutline } from './components/Icon/EnvelopeOpenOutline';
 import { EnvelopeOpenSolid } from './components/Icon/EnvelopeOpenSolid';
 import { EnvelopeOutline } from './components/Icon/EnvelopeOutline';
 import { EnvelopeSolid } from './components/Icon/EnvelopeSolid';
+import { ExclamationCircleOutline } from './components/Icon/ExclamationCircleOutline';
+import { ExclamationCircleSolid } from './components/Icon/ExclamationCircleSolid';
+import { ExclamationTriangleOutline } from './components/Icon/ExclamationTriangleOutline';
+import { ExclamationTriangleSolid } from './components/Icon/ExclamationTriangleSolid';
 import { EyeOutline } from './components/Icon/EyeOutline';
 import { EyeSlashOutline } from './components/Icon/EyeSlashOutline';
 import { EyeSlashSolid } from './components/Icon/EyeSlashSolid';
@@ -278,6 +288,12 @@ export const Icons =
 	ChevronUpDownSolid,
 	ChevronUpOutline,
 	ChevronUpSolid,
+	CloudArrowDownOutline,
+	CloudArrowDownSolid,
+	CloudArrowUpOutline,
+	CloudArrowUpSolid,
+	CloudOutline,
+	CloudSolid,
 	CodeBracketOutline,
 	CodeBracketSolid,
 	CodeBracketSquareOutline,
@@ -298,6 +314,10 @@ export const Icons =
 	EnvelopeOpenSolid,
 	EnvelopeOutline,
 	EnvelopeSolid,
+	ExclamationCircleOutline,
+	ExclamationCircleSolid,
+	ExclamationTriangleOutline,
+	ExclamationTriangleSolid,
 	EyeOutline,
 	EyeSlashOutline,
 	EyeSlashSolid,

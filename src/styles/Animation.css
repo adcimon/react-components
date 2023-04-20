@@ -46,7 +46,6 @@
 	100% {
 		opacity: 0;
 		pointer-events: none;
-		display: none;
 	}
 }
 
@@ -59,7 +58,6 @@
 	100% {
 		opacity: 0;
 		pointer-events: none;
-		display: none;
 	}
 }
 

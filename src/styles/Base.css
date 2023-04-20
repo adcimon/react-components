@@ -534,6 +534,9 @@ input::placeholder {
 	.sm\:justify-center {
 		justify-content: center;
 	}
+	.sm\:static {
+		position: static;
+	}
 	.sm\:m-4 {
 		margin: 1rem;
 	}
