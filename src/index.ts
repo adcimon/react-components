@@ -45,6 +45,8 @@ import { BackwardOutline } from './components/Icon/BackwardOutline';
 import { BackwardSolid } from './components/Icon/BackwardSolid';
 import { Bars3Outline } from './components/Icon/Bars3Outline';
 import { Bars3Solid } from './components/Icon/Bars3Solid';
+import { Bars4Outline } from './components/Icon/Bars4Outline';
+import { Bars4Solid } from './components/Icon/Bars4Solid';
 import { Battery0Outline } from './components/Icon/Battery0Outline';
 import { Battery0Solid } from './components/Icon/Battery0Solid';
 import { Battery50Outline } from './components/Icon/Battery50Outline';
@@ -107,6 +109,14 @@ import { ComputerDesktopOutline } from './components/Icon/ComputerDesktopOutline
 import { ComputerDesktopSolid } from './components/Icon/ComputerDesktopSolid';
 import { CubeOutline } from './components/Icon/CubeOutline';
 import { CubeSolid } from './components/Icon/CubeSolid';
+import { DocumentDuplicateOutline } from './components/Icon/DocumentDuplicateOutline';
+import { DocumentDuplicateSolid } from './components/Icon/DocumentDuplicateSolid';
+import { DocumentOutline } from './components/Icon/DocumentOutline';
+import { DocumentPlusOutline } from './components/Icon/DocumentPlusOutline';
+import { DocumentPlusSolid } from './components/Icon/DocumentPlusSolid';
+import { DocumentSolid } from './components/Icon/DocumentSolid';
+import { DocumentTextOutline } from './components/Icon/DocumentTextOutline';
+import { DocumentTextSolid } from './components/Icon/DocumentTextSolid';
 import { EllipsisHorizontalOutline } from './components/Icon/EllipsisHorizontalOutline';
 import { EllipsisHorizontalSolid } from './components/Icon/EllipsisHorizontalSolid';
 import { EllipsisVerticalOutline } from './components/Icon/EllipsisVerticalOutline';
@@ -127,6 +137,8 @@ import { FaceFrownOutline } from './components/Icon/FaceFrownOutline';
 import { FaceFrownSolid } from './components/Icon/FaceFrownSolid';
 import { FaceSmileOutline } from './components/Icon/FaceSmileOutline';
 import { FaceSmileSolid } from './components/Icon/FaceSmileSolid';
+import { FingerPrintOutline } from './components/Icon/FingerPrintOutline';
+import { FingerPrintSolid } from './components/Icon/FingerPrintSolid';
 import { FlagOutline } from './components/Icon/FlagOutline';
 import { FlagSolid } from './components/Icon/FlagSolid';
 import { ForwardOutline } from './components/Icon/ForwardOutline';
@@ -147,12 +159,16 @@ import { HeartOutline } from './components/Icon/HeartOutline';
 import { HeartSolid } from './components/Icon/HeartSolid';
 import { HomeOutline } from './components/Icon/HomeOutline';
 import { HomeSolid } from './components/Icon/HomeSolid';
+import { InformationCircleOutline } from './components/Icon/InformationCircleOutline';
+import { InformationCircleSolid } from './components/Icon/InformationCircleSolid';
 import { KeyOutline } from './components/Icon/KeyOutline';
 import { KeySolid } from './components/Icon/KeySolid';
 import { LanguageOutline } from './components/Icon/LanguageOutline';
 import { LanguageSolid } from './components/Icon/LanguageSolid';
 import { LinkOutline } from './components/Icon/LinkOutline';
 import { LinkSolid } from './components/Icon/LinkSolid';
+import { MicrophoneOutline } from './components/Icon/MicrophoneOutline';
+import { MicrophoneSolid } from './components/Icon/MicrophoneSolid';
 import { MinusOutline } from './components/Icon/MinusOutline';
 import { MinusSmallOutline } from './components/Icon/MinusSmallOutline';
 import { MinusSmallSolid } from './components/Icon/MinusSmallSolid';
@@ -244,6 +260,8 @@ export const Icons =
 	BackwardSolid,
 	Bars3Outline,
 	Bars3Solid,
+	Bars4Outline,
+	Bars4Solid,
 	Battery0Outline,
 	Battery0Solid,
 	Battery50Outline,
@@ -306,6 +324,14 @@ export const Icons =
 	ComputerDesktopSolid,
 	CubeOutline,
 	CubeSolid,
+	DocumentDuplicateOutline,
+	DocumentDuplicateSolid,
+	DocumentOutline,
+	DocumentPlusOutline,
+	DocumentPlusSolid,
+	DocumentSolid,
+	DocumentTextOutline,
+	DocumentTextSolid,
 	EllipsisHorizontalOutline,
 	EllipsisHorizontalSolid,
 	EllipsisVerticalOutline,
@@ -326,6 +352,8 @@ export const Icons =
 	FaceFrownSolid,
 	FaceSmileOutline,
 	FaceSmileSolid,
+	FingerPrintOutline,
+	FingerPrintSolid,
 	FlagOutline,
 	FlagSolid,
 	ForwardOutline,
@@ -346,12 +374,16 @@ export const Icons =
 	HeartSolid,
 	HomeOutline,
 	HomeSolid,
+	InformationCircleOutline,
+	InformationCircleSolid,
 	KeyOutline,
 	KeySolid,
 	LanguageOutline,
 	LanguageSolid,
 	LinkOutline,
 	LinkSolid,
+	MicrophoneOutline,
+	MicrophoneSolid,
 	MinusOutline,
 	MinusSmallOutline,
 	MinusSmallSolid,
