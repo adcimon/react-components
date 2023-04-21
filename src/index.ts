@@ -37,6 +37,10 @@ import { AdjustmentsHorizontalOutline } from './components/Icon/AdjustmentsHoriz
 import { AdjustmentsHorizontalSolid } from './components/Icon/AdjustmentsHorizontalSolid';
 import { AdjustmentsVerticalOutline } from './components/Icon/AdjustmentsVerticalOutline';
 import { AdjustmentsVerticalSolid } from './components/Icon/AdjustmentsVerticalSolid';
+import { ArchiveBoxOutline } from './components/Icon/ArchiveBoxOutline';
+import { ArchiveBoxSolid } from './components/Icon/ArchiveBoxSolid';
+import { ArchiveBoxXMarkOutline } from './components/Icon/ArchiveBoxXMarkOutline';
+import { ArchiveBoxXMarkSolid } from './components/Icon/ArchiveBoxXMarkSolid';
 import { ArrowLeftOnRectangleOutline } from './components/Icon/ArrowLeftOnRectangleOutline';
 import { ArrowLeftOnRectangleSolid } from './components/Icon/ArrowLeftOnRectangleSolid';
 import { AtSymbolOutline } from './components/Icon/AtSymbolOutline';
@@ -59,10 +63,16 @@ import { BellOutline } from './components/Icon/BellOutline';
 import { BellSlashOutline } from './components/Icon/BellSlashOutline';
 import { BellSlashSolid } from './components/Icon/BellSlashSolid';
 import { BellSolid } from './components/Icon/BellSolid';
+import { BoltOutline } from './components/Icon/BoltOutline';
+import { BoltSlashOutline } from './components/Icon/BoltSlashOutline';
+import { BoltSlashSolid } from './components/Icon/BoltSlashSolid';
+import { BoltSolid } from './components/Icon/BoltSolid';
 import { BookmarkOutline } from './components/Icon/BookmarkOutline';
 import { BookmarkSlashOutline } from './components/Icon/BookmarkSlashOutline';
 import { BookmarkSlashSolid } from './components/Icon/BookmarkSlashSolid';
 import { BookmarkSolid } from './components/Icon/BookmarkSolid';
+import { BugAntOutline } from './components/Icon/BugAntOutline';
+import { BugAntSolid } from './components/Icon/BugAntSolid';
 import { CalendarDaysOutline } from './components/Icon/CalendarDaysOutline';
 import { CalendarDaysSolid } from './components/Icon/CalendarDaysSolid';
 import { CalendarOutline } from './components/Icon/CalendarOutline';
@@ -73,6 +83,10 @@ import { ChartBarOutline } from './components/Icon/ChartBarOutline';
 import { ChartBarSolid } from './components/Icon/ChartBarSolid';
 import { ChartPieOutline } from './components/Icon/ChartPieOutline';
 import { ChartPieSolid } from './components/Icon/ChartPieSolid';
+import { CheckCircleOutline } from './components/Icon/CheckCircleOutline';
+import { CheckCircleSolid } from './components/Icon/CheckCircleSolid';
+import { CheckOutline } from './components/Icon/CheckOutline';
+import { CheckSolid } from './components/Icon/CheckSolid';
 import { ChevronDoubleDownOutline } from './components/Icon/ChevronDoubleDownOutline';
 import { ChevronDoubleDownSolid } from './components/Icon/ChevronDoubleDownSolid';
 import { ChevronDoubleLeftOutline } from './components/Icon/ChevronDoubleLeftOutline';
@@ -91,6 +105,12 @@ import { ChevronUpDownOutline } from './components/Icon/ChevronUpDownOutline';
 import { ChevronUpDownSolid } from './components/Icon/ChevronUpDownSolid';
 import { ChevronUpOutline } from './components/Icon/ChevronUpOutline';
 import { ChevronUpSolid } from './components/Icon/ChevronUpSolid';
+import { CircleStackOutline } from './components/Icon/CircleStackOutline';
+import { CircleStackSolid } from './components/Icon/CircleStackSolid';
+import { ClipboardDocumentOutline } from './components/Icon/ClipboardDocumentOutline';
+import { ClipboardDocumentSolid } from './components/Icon/ClipboardDocumentSolid';
+import { ClipboardOutline } from './components/Icon/ClipboardOutline';
+import { ClipboardSolid } from './components/Icon/ClipboardSolid';
 import { CloudArrowDownOutline } from './components/Icon/CloudArrowDownOutline';
 import { CloudArrowDownSolid } from './components/Icon/CloudArrowDownSolid';
 import { CloudArrowUpOutline } from './components/Icon/CloudArrowUpOutline';
@@ -141,6 +161,14 @@ import { FingerPrintOutline } from './components/Icon/FingerPrintOutline';
 import { FingerPrintSolid } from './components/Icon/FingerPrintSolid';
 import { FlagOutline } from './components/Icon/FlagOutline';
 import { FlagSolid } from './components/Icon/FlagSolid';
+import { FolderMinusOutline } from './components/Icon/FolderMinusOutline';
+import { FolderMinusSolid } from './components/Icon/FolderMinusSolid';
+import { FolderOpenOutline } from './components/Icon/FolderOpenOutline';
+import { FolderOpenSolid } from './components/Icon/FolderOpenSolid';
+import { FolderOutline } from './components/Icon/FolderOutline';
+import { FolderPlusOutline } from './components/Icon/FolderPlusOutline';
+import { FolderPlusSolid } from './components/Icon/FolderPlusSolid';
+import { FolderSolid } from './components/Icon/FolderSolid';
 import { ForwardOutline } from './components/Icon/ForwardOutline';
 import { ForwardSolid } from './components/Icon/ForwardSolid';
 import { GiftOutline } from './components/Icon/GiftOutline';
@@ -167,8 +195,22 @@ import { LanguageOutline } from './components/Icon/LanguageOutline';
 import { LanguageSolid } from './components/Icon/LanguageSolid';
 import { LinkOutline } from './components/Icon/LinkOutline';
 import { LinkSolid } from './components/Icon/LinkSolid';
+import { LockClosedOutline } from './components/Icon/LockClosedOutline';
+import { LockClosedSolid } from './components/Icon/LockClosedSolid';
+import { LockOpenOutline } from './components/Icon/LockOpenOutline';
+import { LockOpenSolid } from './components/Icon/LockOpenSolid';
+import { MagnifyingGlassMinusOutline } from './components/Icon/MagnifyingGlassMinusOutline';
+import { MagnifyingGlassMinusSolid } from './components/Icon/MagnifyingGlassMinusSolid';
+import { MagnifyingGlassOutline } from './components/Icon/MagnifyingGlassOutline';
+import { MagnifyingGlassPlusOutline } from './components/Icon/MagnifyingGlassPlusOutline';
+import { MagnifyingGlassPlusSolid } from './components/Icon/MagnifyingGlassPlusSolid';
+import { MagnifyingGlassSolid } from './components/Icon/MagnifyingGlassSolid';
+import { MapPinOutline } from './components/Icon/MapPinOutline';
+import { MapPinSolid } from './components/Icon/MapPinSolid';
 import { MicrophoneOutline } from './components/Icon/MicrophoneOutline';
 import { MicrophoneSolid } from './components/Icon/MicrophoneSolid';
+import { MinusCircleOutline } from './components/Icon/MinusCircleOutline';
+import { MinusCircleSolid } from './components/Icon/MinusCircleSolid';
 import { MinusOutline } from './components/Icon/MinusOutline';
 import { MinusSmallOutline } from './components/Icon/MinusSmallOutline';
 import { MinusSmallSolid } from './components/Icon/MinusSmallSolid';
@@ -179,16 +221,34 @@ import { NoSymbolOutline } from './components/Icon/NoSymbolOutline';
 import { NoSymbolSolid } from './components/Icon/NoSymbolSolid';
 import { PaperAirplaneOutline } from './components/Icon/PaperAirplaneOutline';
 import { PaperAirplaneSolid } from './components/Icon/PaperAirplaneSolid';
+import { PaperClipOutline } from './components/Icon/PaperClipOutline';
+import { PaperClipSolid } from './components/Icon/PaperClipSolid';
+import { PauseCircleOutline } from './components/Icon/PauseCircleOutline';
+import { PauseCircleSolid } from './components/Icon/PauseCircleSolid';
 import { PauseOutline } from './components/Icon/PauseOutline';
 import { PauseSolid } from './components/Icon/PauseSolid';
 import { PencilOutline } from './components/Icon/PencilOutline';
 import { PencilSolid } from './components/Icon/PencilSolid';
 import { PencilSquareOutline } from './components/Icon/PencilSquareOutline';
 import { PencilSquareSolid } from './components/Icon/PencilSquareSolid';
+import { PhoneArrowDownOutline } from './components/Icon/PhoneArrowDownOutline';
+import { PhoneArrowDownSolid } from './components/Icon/PhoneArrowDownSolid';
+import { PhoneArrowUpOutline } from './components/Icon/PhoneArrowUpOutline';
+import { PhoneArrowUpSolid } from './components/Icon/PhoneArrowUpSolid';
+import { PhoneOutline } from './components/Icon/PhoneOutline';
+import { PhoneSolid } from './components/Icon/PhoneSolid';
+import { PhoneXMarkOutline } from './components/Icon/PhoneXMarkOutline';
+import { PhoneXMarkSolid } from './components/Icon/PhoneXMarkSolid';
+import { PhotoOutline } from './components/Icon/PhotoOutline';
+import { PhotoSolid } from './components/Icon/PhotoSolid';
+import { PlayCircleOutline } from './components/Icon/PlayCircleOutline';
+import { PlayCircleSolid } from './components/Icon/PlayCircleSolid';
 import { PlayOutline } from './components/Icon/PlayOutline';
 import { PlayPauseOutline } from './components/Icon/PlayPauseOutline';
 import { PlayPauseSolid } from './components/Icon/PlayPauseSolid';
 import { PlaySolid } from './components/Icon/PlaySolid';
+import { PlusCircleOutline } from './components/Icon/PlusCircleOutline';
+import { PlusCircleSolid } from './components/Icon/PlusCircleSolid';
 import { PlusOutline } from './components/Icon/PlusOutline';
 import { PlusSmallOutline } from './components/Icon/PlusSmallOutline';
 import { PlusSmallSolid } from './components/Icon/PlusSmallSolid';
@@ -197,10 +257,14 @@ import { PowerOutline } from './components/Icon/PowerOutline';
 import { PowerSolid } from './components/Icon/PowerSolid';
 import { QrCodeOutline } from './components/Icon/QrCodeOutline';
 import { QrCodeSolid } from './components/Icon/QrCodeSolid';
+import { QuestionMarkCircleOutline } from './components/Icon/QuestionMarkCircleOutline';
+import { QuestionMarkCircleSolid } from './components/Icon/QuestionMarkCircleSolid';
 import { RectangleStackOutline } from './components/Icon/RectangleStackOutline';
 import { RectangleStackSolid } from './components/Icon/RectangleStackSolid';
 import { RocketLaunchOutline } from './components/Icon/RocketLaunchOutline';
 import { RocketLaunchSolid } from './components/Icon/RocketLaunchSolid';
+import { RssOutline } from './components/Icon/RssOutline';
+import { RssSolid } from './components/Icon/RssSolid';
 import { ShareOutline } from './components/Icon/ShareOutline';
 import { ShareSolid } from './components/Icon/ShareSolid';
 import { ShoppingBagOutline } from './components/Icon/ShoppingBagOutline';
@@ -219,6 +283,8 @@ import { Square2StackOutline } from './components/Icon/Square2StackOutline';
 import { Square2StackSolid } from './components/Icon/Square2StackSolid';
 import { StarOutline } from './components/Icon/StarOutline';
 import { StarSolid } from './components/Icon/StarSolid';
+import { StopCircleOutline } from './components/Icon/StopCircleOutline';
+import { StopCircleSolid } from './components/Icon/StopCircleSolid';
 import { StopOutline } from './components/Icon/StopOutline';
 import { StopSolid } from './components/Icon/StopSolid';
 import { SunOutline } from './components/Icon/SunOutline';
@@ -245,6 +311,12 @@ import { VideoCameraSlashSolid } from './components/Icon/VideoCameraSlashSolid';
 import { VideoCameraSolid } from './components/Icon/VideoCameraSolid';
 import { WifiOutline } from './components/Icon/WifiOutline';
 import { WifiSolid } from './components/Icon/WifiSolid';
+import { WindowOutline } from './components/Icon/WindowOutline';
+import { WindowSolid } from './components/Icon/WindowSolid';
+import { XCircleOutline } from './components/Icon/XCircleOutline';
+import { XCircleSolid } from './components/Icon/XCircleSolid';
+import { XMarkOutline } from './components/Icon/XMarkOutline';
+import { XMarkSolid } from './components/Icon/XMarkSolid';
 
 export const Icons =
 {
@@ -252,6 +324,10 @@ export const Icons =
 	AdjustmentsHorizontalSolid,
 	AdjustmentsVerticalOutline,
 	AdjustmentsVerticalSolid,
+	ArchiveBoxOutline,
+	ArchiveBoxSolid,
+	ArchiveBoxXMarkOutline,
+	ArchiveBoxXMarkSolid,
 	ArrowLeftOnRectangleOutline,
 	ArrowLeftOnRectangleSolid,
 	AtSymbolOutline,
@@ -274,10 +350,16 @@ export const Icons =
 	BellSlashOutline,
 	BellSlashSolid,
 	BellSolid,
+	BoltOutline,
+	BoltSlashOutline,
+	BoltSlashSolid,
+	BoltSolid,
 	BookmarkOutline,
 	BookmarkSlashOutline,
 	BookmarkSlashSolid,
 	BookmarkSolid,
+	BugAntOutline,
+	BugAntSolid,
 	CalendarDaysOutline,
 	CalendarDaysSolid,
 	CalendarOutline,
@@ -288,6 +370,10 @@ export const Icons =
 	ChartBarSolid,
 	ChartPieOutline,
 	ChartPieSolid,
+	CheckCircleOutline,
+	CheckCircleSolid,
+	CheckOutline,
+	CheckSolid,
 	ChevronDoubleDownOutline,
 	ChevronDoubleDownSolid,
 	ChevronDoubleLeftOutline,
@@ -306,6 +392,12 @@ export const Icons =
 	ChevronUpDownSolid,
 	ChevronUpOutline,
 	ChevronUpSolid,
+	CircleStackOutline,
+	CircleStackSolid,
+	ClipboardDocumentOutline,
+	ClipboardDocumentSolid,
+	ClipboardOutline,
+	ClipboardSolid,
 	CloudArrowDownOutline,
 	CloudArrowDownSolid,
 	CloudArrowUpOutline,
@@ -356,6 +448,14 @@ export const Icons =
 	FingerPrintSolid,
 	FlagOutline,
 	FlagSolid,
+	FolderMinusOutline,
+	FolderMinusSolid,
+	FolderOpenOutline,
+	FolderOpenSolid,
+	FolderOutline,
+	FolderPlusOutline,
+	FolderPlusSolid,
+	FolderSolid,
 	ForwardOutline,
 	ForwardSolid,
 	GiftOutline,
@@ -382,8 +482,22 @@ export const Icons =
 	LanguageSolid,
 	LinkOutline,
 	LinkSolid,
+	MagnifyingGlassMinusOutline,
+	MagnifyingGlassMinusSolid,
+	MagnifyingGlassOutline,
+	MagnifyingGlassPlusOutline,
+	MagnifyingGlassPlusSolid,
+	MagnifyingGlassSolid,
+	LockClosedOutline,
+	LockClosedSolid,
+	LockOpenOutline,
+	LockOpenSolid,
+	MapPinOutline,
+	MapPinSolid,
 	MicrophoneOutline,
 	MicrophoneSolid,
+	MinusCircleOutline,
+	MinusCircleSolid,
 	MinusOutline,
 	MinusSmallOutline,
 	MinusSmallSolid,
@@ -394,16 +508,34 @@ export const Icons =
 	NoSymbolSolid,
 	PaperAirplaneOutline,
 	PaperAirplaneSolid,
+	PaperClipOutline,
+	PaperClipSolid,
+	PauseCircleOutline,
+	PauseCircleSolid,
 	PauseOutline,
 	PauseSolid,
 	PencilOutline,
 	PencilSolid,
 	PencilSquareOutline,
 	PencilSquareSolid,
+	PhoneArrowDownOutline,
+	PhoneArrowDownSolid,
+	PhoneArrowUpOutline,
+	PhoneArrowUpSolid,
+	PhoneOutline,
+	PhoneSolid,
+	PhoneXMarkOutline,
+	PhoneXMarkSolid,
+	PhotoOutline,
+	PhotoSolid,
+	PlayCircleOutline,
+	PlayCircleSolid,
 	PlayOutline,
 	PlayPauseOutline,
 	PlayPauseSolid,
 	PlaySolid,
+	PlusCircleOutline,
+	PlusCircleSolid,
 	PlusOutline,
 	PlusSmallOutline,
 	PlusSmallSolid,
@@ -412,10 +544,14 @@ export const Icons =
 	PowerSolid,
 	QrCodeOutline,
 	QrCodeSolid,
+	QuestionMarkCircleOutline,
+	QuestionMarkCircleSolid,
 	RectangleStackOutline,
 	RectangleStackSolid,
 	RocketLaunchOutline,
 	RocketLaunchSolid,
+	RssOutline,
+	RssSolid,
 	ShareOutline,
 	ShareSolid,
 	ShoppingBagOutline,
@@ -434,6 +570,8 @@ export const Icons =
 	Square2StackSolid,
 	StarOutline,
 	StarSolid,
+	StopCircleOutline,
+	StopCircleSolid,
 	StopOutline,
 	StopSolid,
 	SunOutline,
@@ -459,5 +597,11 @@ export const Icons =
 	VideoCameraSlashSolid,
 	VideoCameraSolid,
 	WifiOutline,
-	WifiSolid
+	WifiSolid,
+	WindowOutline,
+	WindowSolid,
+	XCircleOutline,
+	XCircleSolid,
+	XMarkOutline,
+	XMarkSolid
 };
