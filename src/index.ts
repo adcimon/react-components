@@ -83,6 +83,20 @@ import { ChartBarOutline } from './components/Icon/ChartBarOutline';
 import { ChartBarSolid } from './components/Icon/ChartBarSolid';
 import { ChartPieOutline } from './components/Icon/ChartPieOutline';
 import { ChartPieSolid } from './components/Icon/ChartPieSolid';
+import { ChatBubbleBottomCenterOutline } from './components/Icon/ChatBubbleBottomCenterOutline';
+import { ChatBubbleBottomCenterSolid } from './components/Icon/ChatBubbleBottomCenterSolid';
+import { ChatBubbleBottomCenterTextOutline } from './components/Icon/ChatBubbleBottomCenterTextOutline';
+import { ChatBubbleBottomCenterTextSolid } from './components/Icon/ChatBubbleBottomCenterTextSolid';
+import { ChatBubbleLeftEllipsisOutline } from './components/Icon/ChatBubbleLeftEllipsisOutline';
+import { ChatBubbleLeftEllipsisSolid } from './components/Icon/ChatBubbleLeftEllipsisSolid';
+import { ChatBubbleLeftOutline } from './components/Icon/ChatBubbleLeftOutline';
+import { ChatBubbleLeftRightOutline } from './components/Icon/ChatBubbleLeftRightOutline';
+import { ChatBubbleLeftRightSolid } from './components/Icon/ChatBubbleLeftRightSolid';
+import { ChatBubbleLeftSolid } from './components/Icon/ChatBubbleLeftSolid';
+import { ChatBubbleOvalLeftEllipsisOutline } from './components/Icon/ChatBubbleOvalLeftEllipsisOutline';
+import { ChatBubbleOvalLeftEllipsisSolid } from './components/Icon/ChatBubbleOvalLeftEllipsisSolid';
+import { ChatBubbleOvalLeftOutline } from './components/Icon/ChatBubbleOvalLeftOutline';
+import { ChatBubbleOvalLeftSolid } from './components/Icon/ChatBubbleOvalLeftSolid';
 import { CheckCircleOutline } from './components/Icon/CheckCircleOutline';
 import { CheckCircleSolid } from './components/Icon/CheckCircleSolid';
 import { CheckOutline } from './components/Icon/CheckOutline';
@@ -370,6 +384,20 @@ export const Icons =
 	ChartBarSolid,
 	ChartPieOutline,
 	ChartPieSolid,
+	ChatBubbleBottomCenterOutline,
+	ChatBubbleBottomCenterSolid,
+	ChatBubbleBottomCenterTextOutline,
+	ChatBubbleBottomCenterTextSolid,
+	ChatBubbleLeftEllipsisOutline,
+	ChatBubbleLeftEllipsisSolid,
+	ChatBubbleLeftOutline,
+	ChatBubbleLeftRightOutline,
+	ChatBubbleLeftRightSolid,
+	ChatBubbleLeftSolid,
+	ChatBubbleOvalLeftEllipsisOutline,
+	ChatBubbleOvalLeftEllipsisSolid,
+	ChatBubbleOvalLeftOutline,
+	ChatBubbleOvalLeftSolid,
 	CheckCircleOutline,
 	CheckCircleSolid,
 	CheckOutline,
