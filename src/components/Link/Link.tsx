@@ -14,7 +14,7 @@ export class Link extends React.Component<ILinkProps>
 {
 	public render = () =>
 	{
-		const colorStyle: string = (!this.props.disabled) ? 'text-secondary-400 hover:underline' : 'text-base-400';
+		const colorStyle: string = (!this.props.disabled) ? 'text-primary-600 hover:underline' : 'text-base-400';
 
 		return (
 			<>

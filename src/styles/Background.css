@@ -21,7 +21,37 @@
 	background-color: rgba(0, 0, 0, var(--bg-opacity));
 }
 
+.hover\:bg-black:hover {
+	--bg-opacity: 1;
+	background-color: rgba(0, 0, 0, var(--bg-opacity));
+}
+
+.active\:bg-black:active {
+	--bg-opacity: 1;
+	background-color: rgba(0, 0, 0, var(--bg-opacity));
+}
+
+.focus\:bg-black:focus {
+	--bg-opacity: 1;
+	background-color: rgba(0, 0, 0, var(--bg-opacity));
+}
+
 .bg-white {
+	--bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+.hover\:bg-white:hover {
+	--bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+.active\:bg-white:active {
+	--bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+.focus\:bg-white:focus {
 	--bg-opacity: 1;
 	background-color: rgba(255, 255, 255, var(--bg-opacity));
 }

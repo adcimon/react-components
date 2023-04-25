@@ -25,7 +25,7 @@ export class SuccessModal extends React.Component<ISuccessModalProps>
 					style={this.props.style}>
 					<ModalHeader>
 						<div
-							className='inline-block w-8 h-8 mr-4 bg-base-200 rounded-full'>
+							className='inline-block w-8 h-8 mr-4 bg-white rounded-full'>
 							<svg
 								className='w-full h-full scale-150 text-green-500'
 								viewBox='0 0 20 20'

@@ -64,7 +64,7 @@ export class ProfileMenu extends React.Component<IProfileMenuProps, IProfileMenu
 					className='relative'
 					style={this.props.style}>
 					<span
-						className='mr-2 text-primary-100 font-bold'>
+						className='mr-2 text-base-100 font-bold'>
 						{this.props.label}
 					</span>
 					<button

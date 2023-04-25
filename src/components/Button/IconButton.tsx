@@ -35,7 +35,7 @@ export class IconButton extends React.Component<IIconButtonProps, IIconButtonSta
 
 	public render = () =>
 	{
-		const colorStyle: string = (!this.props.disabled && !this.props.iconHover) ? 'hover:text-base-200 hover:bg-primary-900 transition-colors duration-150' : '';
+		const colorStyle: string = (!this.props.disabled && !this.props.iconHover) ? 'hover:text-white hover:bg-primary-800 transition-colors duration-150' : '';
 
 		return (
 			<>

@@ -15,7 +15,7 @@ export class ListItem extends React.Component<IListItemProps>
 {
 	public render = () =>
 	{
-		const colorStyle: string = (!this.props.disabled) ? 'hover:text-base-200 hover:bg-primary-900' : '';
+		const colorStyle: string = (!this.props.disabled) ? 'hover:text-white hover:bg-primary-800' : '';
 		const cursorStyle: string = (this.props.onClick) ? 'cursor-pointer' : '';
 
 		return (

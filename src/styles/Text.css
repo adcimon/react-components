@@ -415,7 +415,37 @@
 	color: rgba(0, 0, 0, var(--text-opacity));
 }
 
+.hover\:text-black:hover {
+	--text-opacity: 1;
+	color: rgba(0, 0, 0, var(--text-opacity));
+}
+
+.active\:text-black:active {
+	--text-opacity: 1;
+	color: rgba(0, 0, 0, var(--text-opacity));
+}
+
+.focus\:text-black:focus {
+	--text-opacity: 1;
+	color: rgba(0, 0, 0, var(--text-opacity));
+}
+
 .text-white {
+	--text-opacity: 1;
+	color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.hover\:text-white:hover {
+	--text-opacity: 1;
+	color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.active\:text-white:active {
+	--text-opacity: 1;
+	color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.focus\:text-white:focus {
 	--text-opacity: 1;
 	color: rgba(255, 255, 255, var(--text-opacity));
 }

@@ -1,46 +1,8 @@
-#
-#--------------------------------------------------------------------------
-# Palette
-#--------------------------------------------------------------------------
-#
+import os.path
+import argparse
+import json
 
-palette = {
-	"base": { # 60%
-		"50": [250, 250, 250],
-		"100": [244, 244, 245],
-		"200": [228, 228, 231],
-		"300": [212, 212, 216],
-		"400": [161, 161, 170],
-		"500": [113, 113, 122],
-		"600": [82, 82, 91],
-		"700": [36, 38, 45],
-		"800": [26, 28, 35],
-		"900": [18, 19, 23],
-	},
-	"primary": { # 30%
-		"50": [236, 254, 255],
-		"100": [207, 250, 254],
-		"200": [165, 243, 252],
-		"300": [103, 232, 249],
-		"400": [34, 211, 238],
-		"500": [6, 182, 212],
-		"600": [8, 145, 178],
-		"700": [14, 116, 144],
-		"800": [21, 94, 117],
-		"900": [22, 78, 99],
-	},
-	"secondary": { # 10%
-		"50": [239, 246, 255],
-		"100": [219, 234, 254],
-		"200": [191, 219, 254],
-		"300": [147, 197, 253],
-		"400": [96, 165, 250],
-		"500": [59, 130, 246],
-		"600": [37, 99, 235],
-		"700": [29, 78, 216],
-		"800": [30, 64, 175],
-		"900": [30, 58, 138],
-	},
+base = {
 	"green": {
 		"50": [240, 253, 244],
 		"100": [220, 252, 231],
@@ -79,148 +41,165 @@ palette = {
 	},
 }
 
-#
-#--------------------------------------------------------------------------
-# File
-#--------------------------------------------------------------------------
-#
+def main():
+	parser = argparse.ArgumentParser(description='Theme generator')
+	parser.add_argument('--palette', type=str, default="", help='Color palette json file')
+	parser.add_argument('--theme', type=str, default="Theme.css", help='Output theme css file')
+	args = parser.parse_args()
 
-f = open("Theme.css", "w")
+	for arg in vars(args):
+		print('{}: {}'.format(arg.replace('_', ' ').capitalize(), getattr(args, arg)))
 
-#
-#--------------------------------------------------------------------------
-# Root
-#--------------------------------------------------------------------------
-#
+	if os.path.exists(args.palette):
+		with open(args.palette) as f:
+			p = json.load(f)
+			palette = p | base
+	else:
+		palette = base
+		print("Palette file not found")
 
-f.write(":root {\n")
-for color in palette:
-	for tint in palette[color]:
-		str = "\t--{c}-color-{t}: {r}, {g}, {b};\n"
-		str = str.format(c=color, t=tint, r=palette[color][tint][0], g=palette[color][tint][1], b=palette[color][tint][2])
-		f.write(str)
-f.write("}\n\n")
+	print(palette)
 
-#
-#--------------------------------------------------------------------------
-# Text
-#--------------------------------------------------------------------------
-#
+	f = open(args.theme, "w")
 
-f.write("/* Text */\n")
-f.write("\n")
+	#
+	#--------------------------------------------------------------------------
+	# Root
+	#--------------------------------------------------------------------------
+	#
 
-for color in palette:
-	for tint in palette[color]:
-		# Normal
-		str = ".text-{c}-{t} {{\n\t--text-opacity: 1;\n\tcolor: rgba(var(--{c}-color-{t}), var(--text-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	f.write(":root {\n")
+	for color in palette:
+		for tint in palette[color]:
+			out = "\t--{c}-color-{t}: {r}, {g}, {b};\n"
+			out = out.format(c=color, t=tint, r=palette[color][tint][0], g=palette[color][tint][1], b=palette[color][tint][2])
+			f.write(out)
+	f.write("}\n\n")
 
-		# Hover
-		str = ".hover\:text-{c}-{t}:hover {{\n\t--text-opacity: 1;\n\tcolor: rgba(var(--{c}-color-{t}), var(--text-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	#
+	#--------------------------------------------------------------------------
+	# Text
+	#--------------------------------------------------------------------------
+	#
 
-		# Active
-		str = ".active\:text-{c}-{t}:active {{\n\t--text-opacity: 1;\n\tcolor: rgba(var(--{c}-color-{t}), var(--text-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	f.write("/* Text */\n")
+	f.write("\n")
 
-		# Focus
-		str = ".focus\:text-{c}-{t}:focus {{\n\t--text-opacity: 1;\n\tcolor: rgba(var(--{c}-color-{t}), var(--text-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	for color in palette:
+		for tint in palette[color]:
+			# Normal
+			out = ".text-{c}-{t} {{\n\t--text-opacity: 1;\n\tcolor: rgba(var(--{c}-color-{t}), var(--text-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-#
-#--------------------------------------------------------------------------
-# Background
-#--------------------------------------------------------------------------
-#
+			# Hover
+			out = ".hover\:text-{c}-{t}:hover {{\n\t--text-opacity: 1;\n\tcolor: rgba(var(--{c}-color-{t}), var(--text-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-f.write("/* Background */\n")
-f.write("\n")
+			# Active
+			out = ".active\:text-{c}-{t}:active {{\n\t--text-opacity: 1;\n\tcolor: rgba(var(--{c}-color-{t}), var(--text-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-for color in palette:
-	for tint in palette[color]:
-		# Normal
-		str = ".bg-{c}-{t} {{\n\t--bg-opacity: 1;\n\tbackground-color: rgba(var(--{c}-color-{t}), var(--bg-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+			# Focus
+			out = ".focus\:text-{c}-{t}:focus {{\n\t--text-opacity: 1;\n\tcolor: rgba(var(--{c}-color-{t}), var(--text-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-		# Hover
-		str = ".hover\:bg-{c}-{t}:hover {{\n\t--bg-opacity: 1;\n\tbackground-color: rgba(var(--{c}-color-{t}), var(--bg-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	#
+	#--------------------------------------------------------------------------
+	# Background
+	#--------------------------------------------------------------------------
+	#
 
-		# Active
-		str = ".active\:bg-{c}-{t}:active {{\n\t--bg-opacity: 1;\n\tbackground-color: rgba(var(--{c}-color-{t}), var(--bg-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	f.write("/* Background */\n")
+	f.write("\n")
 
-		# Focus
-		str = ".focus\:bg-{c}-{t}:focus {{\n\t--bg-opacity: 1;\n\tbackground-color: rgba(var(--{c}-color-{t}), var(--bg-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	for color in palette:
+		for tint in palette[color]:
+			# Normal
+			out = ".bg-{c}-{t} {{\n\t--bg-opacity: 1;\n\tbackground-color: rgba(var(--{c}-color-{t}), var(--bg-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-#
-#--------------------------------------------------------------------------
-# Border
-#--------------------------------------------------------------------------
-#
+			# Hover
+			out = ".hover\:bg-{c}-{t}:hover {{\n\t--bg-opacity: 1;\n\tbackground-color: rgba(var(--{c}-color-{t}), var(--bg-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-f.write("/* Border */\n")
-f.write("\n")
+			# Active
+			out = ".active\:bg-{c}-{t}:active {{\n\t--bg-opacity: 1;\n\tbackground-color: rgba(var(--{c}-color-{t}), var(--bg-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-for color in palette:
-	for tint in palette[color]:
-		# Normal
-		str = ".border-{c}-{t} {{\n\t--border-opacity: 1;\n\tborder-color: rgba(var(--{c}-color-{t}), var(--border-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+			# Focus
+			out = ".focus\:bg-{c}-{t}:focus {{\n\t--bg-opacity: 1;\n\tbackground-color: rgba(var(--{c}-color-{t}), var(--bg-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-		# Hover
-		str = ".hover\:border-{c}-{t}:hover {{\n\t--border-opacity: 1;\n\tborder-color: rgba(var(--{c}-color-{t}), var(--border-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	#
+	#--------------------------------------------------------------------------
+	# Border
+	#--------------------------------------------------------------------------
+	#
 
-		# Active
-		str = ".active\:border-{c}-{t}:active {{\n\t--border-opacity: 1;\n\tborder-color: rgba(var(--{c}-color-{t}), var(--border-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	f.write("/* Border */\n")
+	f.write("\n")
 
-		# Focus
-		str = ".focus\:border-{c}-{t}:focus {{\n\t--border-opacity: 1;\n\tborder-color: rgba(var(--{c}-color-{t}), var(--border-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	for color in palette:
+		for tint in palette[color]:
+			# Normal
+			out = ".border-{c}-{t} {{\n\t--border-opacity: 1;\n\tborder-color: rgba(var(--{c}-color-{t}), var(--border-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-#
-#--------------------------------------------------------------------------
-# Divide
-#--------------------------------------------------------------------------
-#
+			# Hover
+			out = ".hover\:border-{c}-{t}:hover {{\n\t--border-opacity: 1;\n\tborder-color: rgba(var(--{c}-color-{t}), var(--border-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-f.write("/* Divide */\n")
-f.write("\n")
+			# Active
+			out = ".active\:border-{c}-{t}:active {{\n\t--border-opacity: 1;\n\tborder-color: rgba(var(--{c}-color-{t}), var(--border-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-for tint in palette["base"]:
-	str = ".divide-{c}-{t} > :not([hidden]) ~ :not([hidden]) {{\n\t--divide-opacity: 1;\n\tborder-color: rgba(var(--{c}-color-{t}), var(--divide-opacity));\n}}\n\n"
-	str = str.format(c="base", t=tint)
-	f.write(str)
+			# Focus
+			out = ".focus\:border-{c}-{t}:focus {{\n\t--border-opacity: 1;\n\tborder-color: rgba(var(--{c}-color-{t}), var(--border-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
 
-#
-#--------------------------------------------------------------------------
-# Shadow
-#--------------------------------------------------------------------------
-#
+	#
+	#--------------------------------------------------------------------------
+	# Divide
+	#--------------------------------------------------------------------------
+	#
 
-f.write("/* Shadow */\n")
-f.write("\n")
+	f.write("/* Divide */\n")
+	f.write("\n")
 
-for color in palette:
-	for tint in palette[color]:
-		str = ".focus\:shadow-{c}-{t}:focus {{\n\t--shadow-opacity: 0.5;\n\tbox-shadow: 0 0 0 3px rgba(var(--{c}-color-{t}), var(--shadow-opacity));\n}}\n\n"
-		str = str.format(c=color, t=tint)
-		f.write(str)
+	if "base" in palette:
+		for tint in palette["base"]:
+			out = ".divide-{c}-{t} > :not([hidden]) ~ :not([hidden]) {{\n\t--divide-opacity: 1;\n\tborder-color: rgba(var(--{c}-color-{t}), var(--divide-opacity));\n}}\n\n"
+			out = out.format(c="base", t=tint)
+			f.write(out)
 
-f.close()
+	#
+	#--------------------------------------------------------------------------
+	# Shadow
+	#--------------------------------------------------------------------------
+	#
+
+	f.write("/* Shadow */\n")
+	f.write("\n")
+
+	for color in palette:
+		for tint in palette[color]:
+			out = ".focus\:shadow-{c}-{t}:focus {{\n\t--shadow-opacity: 0.5;\n\tbox-shadow: 0 0 0 3px rgba(var(--{c}-color-{t}), var(--shadow-opacity));\n}}\n\n"
+			out = out.format(c=color, t=tint)
+			f.write(out)
+
+	f.close()
+
+if __name__ == "__main__":
+    main()
