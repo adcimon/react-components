@@ -20,7 +20,7 @@ export class Selector extends React.Component<ISelectorProps>
 		return (
 			<>
 				<label
-					className='block mt-4 text-sm'
+					className='block mt-2 text-sm'
 					style={this.props.style}>
 					<span
 						className='text-base-400'>

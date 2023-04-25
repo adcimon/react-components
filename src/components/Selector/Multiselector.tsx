@@ -20,7 +20,7 @@ export class Multiselector extends React.Component<IMultiselectorProps>
 		return (
 			<>
 				<label
-					className='block mt-4 text-sm'>
+					className='block mt-2 text-sm'>
 					<span
 						className='text-base-400'>
 						{this.props.label}
