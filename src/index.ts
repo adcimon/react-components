@@ -59,8 +59,18 @@ import { ArrowsRightLeftOutline } from './components/Icon/ArrowsRightLeftOutline
 import { ArrowsRightLeftSolid } from './components/Icon/ArrowsRightLeftSolid';
 import { ArrowsUpDownOutline } from './components/Icon/ArrowsUpDownOutline';
 import { ArrowsUpDownSolid } from './components/Icon/ArrowsUpDownSolid';
+import { ArrowTopRightOnSquareOutline } from './components/Icon/ArrowTopRightOnSquareOutline';
+import { ArrowTopRightOnSquareSolid } from './components/Icon/ArrowTopRightOnSquareSolid';
 import { ArrowUpTrayOutline } from './components/Icon/ArrowUpTrayOutline';
 import { ArrowUpTraySolid } from './components/Icon/ArrowUpTraySolid';
+import { ArrowUturnDownOutline } from './components/Icon/ArrowUturnDownOutline';
+import { ArrowUturnDownSolid } from './components/Icon/ArrowUturnDownSolid';
+import { ArrowUturnLeftOutline } from './components/Icon/ArrowUturnLeftOutline';
+import { ArrowUturnLeftSolid } from './components/Icon/ArrowUturnLeftSolid';
+import { ArrowUturnRightOutline } from './components/Icon/ArrowUturnRightOutline';
+import { ArrowUturnRightSolid } from './components/Icon/ArrowUturnRightSolid';
+import { ArrowUturnUpOutline } from './components/Icon/ArrowUturnUpOutline';
+import { ArrowUturnUpSolid } from './components/Icon/ArrowUturnUpSolid';
 import { AtSymbolOutline } from './components/Icon/AtSymbolOutline';
 import { AtSymbolSolid } from './components/Icon/AtSymbolSolid';
 import { BackwardOutline } from './components/Icon/BackwardOutline';
@@ -378,8 +388,18 @@ export const Icons =
 	ArrowsRightLeftSolid,
 	ArrowsUpDownOutline,
 	ArrowsUpDownSolid,
+	ArrowTopRightOnSquareOutline,
+	ArrowTopRightOnSquareSolid,
 	ArrowUpTrayOutline,
 	ArrowUpTraySolid,
+	ArrowUturnDownOutline,
+	ArrowUturnDownSolid,
+	ArrowUturnLeftOutline,
+	ArrowUturnLeftSolid,
+	ArrowUturnRightOutline,
+	ArrowUturnRightSolid,
+	ArrowUturnUpOutline,
+	ArrowUturnUpSolid,
 	AtSymbolOutline,
 	AtSymbolSolid,
 	BackwardOutline,
