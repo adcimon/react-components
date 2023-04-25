@@ -10,6 +10,8 @@ def main():
 	shutil.copy('README.md', build_dir)
 	shutil.copy('LICENSE.md', build_dir)
 	shutil.copy('theme.py', build_dir)
+	shutil.copy('palette_light.json', build_dir)
+	shutil.copy('palette_dark.json', build_dir)
 
 if __name__ == '__main__':
     main()
