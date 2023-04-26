@@ -21,6 +21,7 @@ npm run build
 
 Publish.
 ```
+npm login --scope=@adcimon --auth-type=legacy --registry=https://npm.pkg.github.com
 npm publish ./dist
 ```
 
