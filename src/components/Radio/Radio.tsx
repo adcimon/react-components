@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IRadioButtonProps
+interface IRadioProps
 {
 	label?: string | React.ReactNode;
 	value?: string | number | readonly string[] | undefined;
@@ -10,7 +10,7 @@ interface IRadioButtonProps
 	style?: React.CSSProperties;
 }
 
-export class RadioButton extends React.Component<IRadioButtonProps>
+export class Radio extends React.Component<IRadioProps>
 {
 	public render = () =>
 	{

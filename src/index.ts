@@ -20,7 +20,7 @@ export * from './components/Modal/WarningModal';
 export * from './components/Modal/ErrorModal';
 export * from './components/Modal/DialogModal';
 export * from './components/ProfileMenu/ProfileMenu';
-export * from './components/RadioButton/RadioButton';
+export * from './components/Radio/Radio';
 export * from './components/Selector/Multiselector';
 export * from './components/Selector/Selector';
 export * from './components/SignView/SignView';
@@ -32,6 +32,7 @@ export * from './components/Table/Table';
 export * from './components/Tag/Tag';
 export * from './components/TextArea/TextArea';
 export * from './components/TextInput/TextInput';
+export * from './components/Toggle/IconToggle';
 
 import { AdjustmentsHorizontalOutline } from './components/Icon/AdjustmentsHorizontalOutline';
 import { AdjustmentsHorizontalSolid } from './components/Icon/AdjustmentsHorizontalSolid';
