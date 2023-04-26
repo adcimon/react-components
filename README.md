@@ -9,6 +9,14 @@ Install.
 npm install @adcimon/react-components
 ```
 
+## Build
+
+Build.
+```
+npm run build
+```
+* Creates a `dist` folder.
+
 ## Themes
 
 Import a default theme.
