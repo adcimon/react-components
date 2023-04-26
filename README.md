@@ -17,6 +17,13 @@ npm run build
 ```
 * Creates a `dist` folder.
 
+## Publish
+
+Publish.
+```
+npm publish ./dist
+```
+
 ## Components
 
 Import a component.
