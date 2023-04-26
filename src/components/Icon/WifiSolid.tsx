@@ -1,4 +1,5 @@
 import React from 'react';
+import { IIconProps } from './IIconProps';
 
 export class WifiSolid extends React.Component<IIconProps>
 {

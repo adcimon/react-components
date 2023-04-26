@@ -1,4 +1,5 @@
 import React from 'react';
+import { IIconProps } from './IIconProps';
 
 export class MagnifyingGlassPlusSolid extends React.Component<IIconProps>
 {

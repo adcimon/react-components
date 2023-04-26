@@ -1,4 +1,5 @@
 import React from 'react';
+import { IIconProps } from './IIconProps';
 
 export class EllipsisHorizontalSolid extends React.Component<IIconProps>
 {

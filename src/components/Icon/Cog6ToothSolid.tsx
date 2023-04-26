@@ -1,4 +1,5 @@
 import React from 'react';
+import { IIconProps } from './IIconProps';
 
 export class Cog6ToothSolid extends React.Component<IIconProps>
 {

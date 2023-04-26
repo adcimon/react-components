@@ -5,10 +5,8 @@
   "description": "Collection of React components",
   "author": "adcimon",
   "license": "MIT",
-  "main": "index.js",
-  "files": [
-    "src/**/*"
-  ],
+  "main": "dist/index.js",
+  "files": ["dist/**"],
   "directories": {
     "src": "src"
   },
