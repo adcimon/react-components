@@ -41,16 +41,22 @@ import { ArchiveBoxOutline } from './components/Icon/ArchiveBoxOutline';
 import { ArchiveBoxSolid } from './components/Icon/ArchiveBoxSolid';
 import { ArchiveBoxXMarkOutline } from './components/Icon/ArchiveBoxXMarkOutline';
 import { ArchiveBoxXMarkSolid } from './components/Icon/ArchiveBoxXMarkSolid';
+import { ArrowDownOutline } from './components/Icon/ArrowDownOutline';
+import { ArrowDownSolid } from './components/Icon/ArrowDownSolid';
 import { ArrowDownTrayOutline } from './components/Icon/ArrowDownTrayOutline';
 import { ArrowDownTraySolid } from './components/Icon/ArrowDownTraySolid';
 import { ArrowLeftOnRectangleOutline } from './components/Icon/ArrowLeftOnRectangleOutline';
 import { ArrowLeftOnRectangleSolid } from './components/Icon/ArrowLeftOnRectangleSolid';
+import { ArrowLeftOutline } from './components/Icon/ArrowLeftOutline';
+import { ArrowLeftSolid } from './components/Icon/ArrowLeftSolid';
 import { ArrowPathOutline } from './components/Icon/ArrowPathOutline';
 import { ArrowPathRoundedOutline } from './components/Icon/ArrowPathRoundedOutline';
 import { ArrowPathRoundedSolid } from './components/Icon/ArrowPathRoundedSolid';
 import { ArrowPathSolid } from './components/Icon/ArrowPathSolid';
 import { ArrowRightOnRectangleOutline } from './components/Icon/ArrowRightOnRectangleOutline';
 import { ArrowRightOnRectangleSolid } from './components/Icon/ArrowRightOnRectangleSolid';
+import { ArrowRightOutline } from './components/Icon/ArrowRightOutline';
+import { ArrowRightSolid } from './components/Icon/ArrowRightSolid';
 import { ArrowsPointingInOutline } from './components/Icon/ArrowsPointingInOutline';
 import { ArrowsPointingInSolid } from './components/Icon/ArrowsPointingInSolid';
 import { ArrowsPointingOutOutline } from './components/Icon/ArrowsPointingOutOutline';
@@ -61,6 +67,8 @@ import { ArrowsUpDownOutline } from './components/Icon/ArrowsUpDownOutline';
 import { ArrowsUpDownSolid } from './components/Icon/ArrowsUpDownSolid';
 import { ArrowTopRightOnSquareOutline } from './components/Icon/ArrowTopRightOnSquareOutline';
 import { ArrowTopRightOnSquareSolid } from './components/Icon/ArrowTopRightOnSquareSolid';
+import { ArrowUpOutline } from './components/Icon/ArrowUpOutline';
+import { ArrowUpSolid } from './components/Icon/ArrowUpSolid';
 import { ArrowUpTrayOutline } from './components/Icon/ArrowUpTrayOutline';
 import { ArrowUpTraySolid } from './components/Icon/ArrowUpTraySolid';
 import { ArrowUturnDownOutline } from './components/Icon/ArrowUturnDownOutline';
@@ -370,16 +378,22 @@ export const Icons =
 	ArchiveBoxSolid,
 	ArchiveBoxXMarkOutline,
 	ArchiveBoxXMarkSolid,
+	ArrowDownOutline,
+	ArrowDownSolid,
 	ArrowDownTrayOutline,
 	ArrowDownTraySolid,
 	ArrowLeftOnRectangleOutline,
 	ArrowLeftOnRectangleSolid,
+	ArrowLeftOutline,
+	ArrowLeftSolid,
 	ArrowPathOutline,
 	ArrowPathRoundedOutline,
 	ArrowPathRoundedSolid,
 	ArrowPathSolid,
 	ArrowRightOnRectangleOutline,
 	ArrowRightOnRectangleSolid,
+	ArrowRightOutline,
+	ArrowRightSolid,
 	ArrowsPointingInOutline,
 	ArrowsPointingInSolid,
 	ArrowsPointingOutOutline,
@@ -390,6 +404,8 @@ export const Icons =
 	ArrowsUpDownSolid,
 	ArrowTopRightOnSquareOutline,
 	ArrowTopRightOnSquareSolid,
+	ArrowUpOutline,
+	ArrowUpSolid,
 	ArrowUpTrayOutline,
 	ArrowUpTraySolid,
 	ArrowUturnDownOutline,
