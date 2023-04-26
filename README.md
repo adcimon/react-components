@@ -17,6 +17,13 @@ npm run build
 ```
 * Creates a `dist` folder.
 
+## Components
+
+Import a component.
+```
+import { Button } from '@adcimon/react-components';
+```
+
 ## Themes
 
 Import a default theme.
