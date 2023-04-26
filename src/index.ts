@@ -53,6 +53,14 @@ import { ArrowLeftOnRectangleOutline } from './components/Icon/ArrowLeftOnRectan
 import { ArrowLeftOnRectangleSolid } from './components/Icon/ArrowLeftOnRectangleSolid';
 import { ArrowLeftOutline } from './components/Icon/ArrowLeftOutline';
 import { ArrowLeftSolid } from './components/Icon/ArrowLeftSolid';
+import { ArrowLongDownOutline } from './components/Icon/ArrowLongDownOutline';
+import { ArrowLongDownSolid } from './components/Icon/ArrowLongDownSolid';
+import { ArrowLongLeftOutline } from './components/Icon/ArrowLongLeftOutline';
+import { ArrowLongLeftSolid } from './components/Icon/ArrowLongLeftSolid';
+import { ArrowLongRightOutline } from './components/Icon/ArrowLongRightOutline';
+import { ArrowLongRightSolid } from './components/Icon/ArrowLongRightSolid';
+import { ArrowLongUpOutline } from './components/Icon/ArrowLongUpOutline';
+import { ArrowLongUpSolid } from './components/Icon/ArrowLongUpSolid';
 import { ArrowPathOutline } from './components/Icon/ArrowPathOutline';
 import { ArrowPathRoundedOutline } from './components/Icon/ArrowPathRoundedOutline';
 import { ArrowPathRoundedSolid } from './components/Icon/ArrowPathRoundedSolid';
@@ -398,6 +406,14 @@ export const Icons =
 	ArrowLeftOnRectangleSolid,
 	ArrowLeftOutline,
 	ArrowLeftSolid,
+	ArrowLongDownOutline,
+	ArrowLongDownSolid,
+	ArrowLongLeftOutline,
+	ArrowLongLeftSolid,
+	ArrowLongRightOutline,
+	ArrowLongRightSolid,
+	ArrowLongUpOutline,
+	ArrowLongUpSolid,
 	ArrowPathOutline,
 	ArrowPathRoundedOutline,
 	ArrowPathRoundedSolid,
