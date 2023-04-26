@@ -22,7 +22,7 @@ npm run build
 Publish.
 ```
 npm login --registry=https://npm.pkg.github.com --scope=@adcimon
-npm publish
+npm publish ./dist
 ```
 
 ## Components
@@ -36,8 +36,8 @@ import { Button } from '@adcimon/react-components';
 
 Import a default theme.
 ```
-import '@adcimon/react-components/dist/styles/ThemeLight.css';
-import '@adcimon/react-components/dist/styles/ThemeDark.css';
+import '@adcimon/react-components/styles/ThemeLight.css';
+import '@adcimon/react-components/styles/ThemeDark.css';
 ```
 
 Generate a theme.

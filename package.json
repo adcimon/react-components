@@ -5,14 +5,14 @@
   "description": "Collection of React components",
   "author": "adcimon",
   "license": "MIT",
-  "main": "dist/index.js",
-  "files": ["dist/**"],
+  "main": "index.js",
+  "files": ["./**/*"],
   "directories": {
     "src": "src"
   },
   "scripts": {
-	"clean": "python clean.py",
-    "build": "npm run clean && python build.py"
+	"clean": "python ./scripts/clean.py",
+    "build": "npm run clean && python ./scripts/build.py"
   },
   "repository": {
     "type": "git",
