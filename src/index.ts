@@ -19,6 +19,7 @@ export * from './components/Modal/SuccessModal';
 export * from './components/Modal/WarningModal';
 export * from './components/Modal/ErrorModal';
 export * from './components/Modal/DialogModal';
+export * from './components/NumberInput/NumberInput';
 export * from './components/ProfileMenu/ProfileMenu';
 export * from './components/Radio/Radio';
 export * from './components/Selector/Multiselector';
