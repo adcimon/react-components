@@ -12,6 +12,7 @@ interface ITextInputProps
 {
 	label?: string;
 	icon?: React.ReactNode;
+	value?: string | number | readonly string[] | undefined;
 	type?: string;
 	placeholder?: string;
 	tip?: string;
@@ -66,6 +67,7 @@ export class TextInput extends React.Component<ITextInputProps>
 					<div
 						className='relative'>
 						<input
+							value={this.props.value}
 							type={this.props.type}
 							placeholder={this.props.placeholder}
 							disabled={this.props.disabled}

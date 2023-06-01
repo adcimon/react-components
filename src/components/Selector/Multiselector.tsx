@@ -20,7 +20,8 @@ export class Multiselector extends React.Component<IMultiselectorProps>
 		return (
 			<>
 				<label
-					className='block mt-2 text-sm'>
+					className={`${this.props.className} block mt-2 text-sm`}
+					style={this.props.style}>
 					<span
 						className='text-base-400'>
 						{this.props.label}
@@ -30,8 +31,7 @@ export class Multiselector extends React.Component<IMultiselectorProps>
 						value={this.props.value}
 						disabled={this.props.disabled}
 						onChange={this.props.onChange}
-						className={`${this.props.className} block mt-1 px-3 py-2 text-sm text-base-300 bg-base-700 border-1 rounded border-base-600 ${colorStyle} transition-colors duration-150`}
-						style={this.props.style}>
+						className={`block mt-1 px-3 py-2 text-sm text-base-300 bg-base-700 border-1 rounded border-base-600 ${colorStyle} transition-colors duration-150`}>
 						{this.props.children}
 					</select>
 				</label>

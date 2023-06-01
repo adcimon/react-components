@@ -19,12 +19,14 @@ export enum TextAreaResize
 interface ITextAreaProps
 {
 	label?: string;
+	value?: string | number | readonly string[] | undefined;
 	rows?: number;
 	placeholder?: string;
 	tip?: string;
 	variant?: TextAreaVariant;
 	resize?: TextAreaResize;
 	disabled?: boolean;
+	readOnly?: boolean;
 	className?: string;
 	style?: React.CSSProperties;
 }
@@ -90,10 +92,12 @@ export class TextArea extends React.Component<ITextAreaProps>
 						{this.props.label}
 					</span>
 					<textarea
+						value={this.props.value}
 						rows={this.props.rows || 3}
 						placeholder={this.props.placeholder}
 						disabled={this.props.disabled}
-						className={`block w-full mt-1 px-2 py-2 text-sm text-base-300 bg-base-700 border-1 rounded ${colorStyle} focus:outline-none transition-colors duration-150 ${resize} textarea`}>
+						readOnly={this.props.readOnly}
+						className={`block w-full h-full mt-1 px-2 py-2 text-sm text-base-300 bg-base-700 border-1 rounded ${colorStyle} focus:outline-none transition-colors duration-150 ${resize} textarea`}>
 					</textarea>
 					<span
 						className={`block ${(typeof this.props.tip === 'string') ? 'h-4': ''} m-1 text-xs ${tipStyle}`}>

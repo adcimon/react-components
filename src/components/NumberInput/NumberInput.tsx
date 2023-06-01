@@ -12,6 +12,7 @@ interface INumberInputProps
 {
 	label?: string;
 	icon?: React.ReactNode;
+	value?: string | number | readonly string[] | undefined;
 	min?: number;
 	max?: number;
 	step?: number;
@@ -68,6 +69,7 @@ export class NumberInput extends React.Component<INumberInputProps>
 					<div
 						className='relative'>
 						<input
+							value={this.props.value}
 							type='number'
 							min={this.props.min}
 							max={this.props.max}
