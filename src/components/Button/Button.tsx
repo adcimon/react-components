@@ -13,7 +13,7 @@ interface IButtonProps
 	label?: string;
 	variant?: ButtonVariant;
 	disabled?: boolean;
-	onClick?: () => void;
+	onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
 	className?: string;
 	style?: React.CSSProperties;
 }

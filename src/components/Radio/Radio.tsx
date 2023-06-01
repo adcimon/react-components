@@ -5,7 +5,7 @@ interface IRadioProps
 	label?: string | React.ReactNode;
 	value?: string | number | readonly string[] | undefined;
 	disabled?: boolean;
-	onChange?: () => void;
+	onChange?: React.ChangeEventHandler<HTMLInputElement> | undefined;
 	className?: string;
 	style?: React.CSSProperties;
 }

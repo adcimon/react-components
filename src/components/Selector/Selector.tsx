@@ -6,7 +6,7 @@ interface ISelectorProps
 	icon?: React.ReactNode;
 	value?: string | number | readonly string[] | undefined;
 	disabled?: boolean;
-	onChange?: () => void;
+	onChange?: React.ChangeEventHandler<HTMLSelectElement> | undefined;
 	className?: string;
 	style?: React.CSSProperties;
 	children?: React.ReactNode;

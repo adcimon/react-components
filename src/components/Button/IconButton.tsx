@@ -5,7 +5,7 @@ interface IIconButtonProps
 	icon?: React.ReactNode;
 	iconHover?: React.ReactNode;
 	disabled?: boolean;
-	onClick?: () => void;
+	onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
 	className?: string;
 	style?: React.CSSProperties;
 }
