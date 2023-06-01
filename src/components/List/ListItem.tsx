@@ -6,7 +6,7 @@ interface IListItemProps
 	label?: string | React.ReactNode;
 	selected?: boolean;
 	disabled?: boolean;
-	onClick?: () => void;
+	onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
 	className?: string;
 	style?: React.CSSProperties;
 }

@@ -3,6 +3,7 @@ import React from 'react';
 interface IMultiselectorProps
 {
 	label?: string;
+	defaultValue?: string | number | readonly string[] | undefined;
 	value?: string | number | readonly string[] | undefined;
 	disabled?: boolean;
 	onChange?: React.ChangeEventHandler<HTMLSelectElement> | undefined;
@@ -28,6 +29,7 @@ export class Multiselector extends React.Component<IMultiselectorProps>
 					</span>
 					<select
 						multiple={true}
+						defaultValue={this.props.defaultValue}
 						value={this.props.value}
 						disabled={this.props.disabled}
 						onChange={this.props.onChange}

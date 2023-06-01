@@ -12,12 +12,15 @@ interface ITextInputProps
 {
 	label?: string;
 	icon?: React.ReactNode;
+	defaultValue?: string | number | readonly string[] | undefined;
 	value?: string | number | readonly string[] | undefined;
 	type?: string;
 	placeholder?: string;
 	tip?: string;
 	variant?: TextInputVariant;
 	disabled?: boolean;
+	readOnly?: boolean;
+	onChange?: React.ChangeEventHandler<HTMLInputElement> | undefined;
 	className?: string;
 	style?: React.CSSProperties;
 }
@@ -55,6 +58,11 @@ export class TextInput extends React.Component<ITextInputProps>
 			tipStyle = 'text-base-400';
 		}
 
+		if( this.props.readOnly )
+		{
+			colorStyle = 'border-base-600';
+		}
+
 		return (
 			<>
 				<label
@@ -67,10 +75,13 @@ export class TextInput extends React.Component<ITextInputProps>
 					<div
 						className='relative'>
 						<input
+							defaultValue={this.props.defaultValue}
 							value={this.props.value}
 							type={this.props.type}
 							placeholder={this.props.placeholder}
 							disabled={this.props.disabled}
+							readOnly={this.props.readOnly}
+							onChange={this.props.onChange}
 							className={`block w-full mt-1 px-2 py-2 ${(this.props.icon) ? 'pl-10' : ''} text-sm text-base-300 bg-base-700 border-1 rounded ${colorStyle} focus:outline-none transition-colors duration-150`}/>
 						<div
 							className={`flex items-center ml-3 absolute inset-y-0 text-base-400 pointer-events-none`}>

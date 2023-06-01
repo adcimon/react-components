@@ -19,6 +19,7 @@ export enum TextAreaResize
 interface ITextAreaProps
 {
 	label?: string;
+	defaultValue?: string | number | readonly string[] | undefined;
 	value?: string | number | readonly string[] | undefined;
 	rows?: number;
 	placeholder?: string;
@@ -27,6 +28,7 @@ interface ITextAreaProps
 	resize?: TextAreaResize;
 	disabled?: boolean;
 	readOnly?: boolean;
+	onChange?: React.ChangeEventHandler<HTMLTextAreaElement> | undefined;
 	className?: string;
 	style?: React.CSSProperties;
 }
@@ -97,11 +99,13 @@ export class TextArea extends React.Component<ITextAreaProps>
 						{this.props.label}
 					</span>
 					<textarea
+						defaultValue={this.props.defaultValue}
 						value={this.props.value}
 						rows={this.props.rows || 3}
 						placeholder={this.props.placeholder}
 						disabled={this.props.disabled}
 						readOnly={this.props.readOnly}
+						onChange={this.props.onChange}
 						className={`block w-full h-full mt-1 px-2 py-2 text-sm text-base-300 bg-base-700 border-1 rounded ${colorStyle} focus:outline-none transition-colors duration-150 ${resize} textarea`}>
 					</textarea>
 					<span

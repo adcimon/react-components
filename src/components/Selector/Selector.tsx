@@ -4,6 +4,7 @@ interface ISelectorProps
 {
 	label?: string;
 	icon?: React.ReactNode;
+	defaultValue?: string | number | readonly string[] | undefined;
 	value?: string | number | readonly string[] | undefined;
 	disabled?: boolean;
 	onChange?: React.ChangeEventHandler<HTMLSelectElement> | undefined;
@@ -30,6 +31,7 @@ export class Selector extends React.Component<ISelectorProps>
 					<div
 						className='relative'>
 						<select
+							defaultValue={this.props.defaultValue}
 							value={this.props.value}
 							disabled={this.props.disabled}
 							onChange={this.props.onChange}

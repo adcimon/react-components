@@ -12,6 +12,7 @@ interface INumberInputProps
 {
 	label?: string;
 	icon?: React.ReactNode;
+	defaultValue?: string | number | readonly string[] | undefined;
 	value?: string | number | readonly string[] | undefined;
 	min?: number;
 	max?: number;
@@ -20,6 +21,8 @@ interface INumberInputProps
 	tip?: string;
 	variant?: NumberInputVariant;
 	disabled?: boolean;
+	readOnly?: boolean;
+	onChange?: React.ChangeEventHandler<HTMLInputElement> | undefined;
 	className?: string;
 	style?: React.CSSProperties;
 }
@@ -57,6 +60,11 @@ export class NumberInput extends React.Component<INumberInputProps>
 			tipStyle = 'text-base-400';
 		}
 
+		if( this.props.readOnly )
+		{
+			colorStyle = 'border-base-600';
+		}
+
 		return (
 			<>
 				<label
@@ -69,6 +77,7 @@ export class NumberInput extends React.Component<INumberInputProps>
 					<div
 						className='relative'>
 						<input
+							defaultValue={this.props.defaultValue}
 							value={this.props.value}
 							type='number'
 							min={this.props.min}
@@ -76,6 +85,8 @@ export class NumberInput extends React.Component<INumberInputProps>
 							step={this.props.step}
 							placeholder={this.props.placeholder}
 							disabled={this.props.disabled}
+							readOnly={this.props.readOnly}
+							onChange={this.props.onChange}
 							className={`block w-full mt-1 px-2 py-2 ${(this.props.icon) ? 'pl-10' : ''} text-sm text-base-300 bg-base-700 border-1 rounded ${colorStyle} focus:outline-none transition-colors duration-150`}/>
 						<div
 							className={`flex items-center ml-3 absolute inset-y-0 text-base-400 pointer-events-none`}>
