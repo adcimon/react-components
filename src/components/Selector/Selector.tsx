@@ -33,7 +33,7 @@ export class Selector extends React.Component<ISelectorProps>
 							value={this.props.value}
 							disabled={this.props.disabled}
 							onChange={this.props.onChange}
-							className={`block w-full mt-1 px-3 py-2 text-sm text-base-300 bg-base-700 border-1 rounded border-base-600 ${colorStyle} transition-colors duration-150 select`}>
+							className={`block w-full mt-1 px-3 py-2 ${(this.props.icon) ? 'pl-10' : ''} text-sm text-base-300 bg-base-700 border-1 rounded border-base-600 ${colorStyle} transition-colors duration-150 select`}>
 							{this.props.children}
 						</select>
 						<div

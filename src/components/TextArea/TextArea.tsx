@@ -64,6 +64,11 @@ export class TextArea extends React.Component<ITextAreaProps>
 			tipStyle = 'text-base-400';		
 		}
 
+		if( this.props.readOnly )
+		{
+			colorStyle = 'border-base-600';
+		}
+
 		let resize: string = '';
 		switch( this.props.resize )
 		{
