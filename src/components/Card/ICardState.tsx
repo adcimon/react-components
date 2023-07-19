@@ -1,4 +1,3 @@
-export interface ICardState
-{
+export interface ICardState {
 	hover: boolean;
 }

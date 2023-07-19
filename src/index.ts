@@ -386,8 +386,7 @@ import { XCircleSolid } from './components/Icon/XCircleSolid';
 import { XMarkOutline } from './components/Icon/XMarkOutline';
 import { XMarkSolid } from './components/Icon/XMarkSolid';
 
-export const Icons =
-{
+export const Icons = {
 	AdjustmentsHorizontalOutline,
 	AdjustmentsHorizontalSolid,
 	AdjustmentsVerticalOutline,
@@ -737,5 +736,5 @@ export const Icons =
 	XCircleOutline,
 	XCircleSolid,
 	XMarkOutline,
-	XMarkSolid
+	XMarkSolid,
 };

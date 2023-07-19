@@ -1,10 +1,8 @@
 import React from 'react';
 import { IIconProps } from './IIconProps';
 
-export class ChevronDoubleRightOutline extends React.Component<IIconProps>
-{
-	public render = () =>
-	{
+export class ChevronDoubleRightOutline extends React.Component<IIconProps> {
+	public render = () => {
 		return (
 			<>
 				<svg
@@ -17,10 +15,9 @@ export class ChevronDoubleRightOutline extends React.Component<IIconProps>
 					<path
 						strokeLinecap='round'
 						strokeLinejoin='round'
-						d='M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5'>
-					</path>
+						d='M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5'></path>
 				</svg>
 			</>
 		);
-	}
+	};
 }

@@ -1,16 +1,13 @@
 import React from 'react';
 
-interface ICellProps
-{
+interface ICellProps {
 	className?: string;
 	style?: React.CSSProperties;
 	children?: React.ReactNode;
 }
 
-export class Cell extends React.Component<ICellProps>
-{
-	public render = () =>
-	{
+export class Cell extends React.Component<ICellProps> {
+	public render = () => {
 		return (
 			<>
 				<td
@@ -20,5 +17,5 @@ export class Cell extends React.Component<ICellProps>
 				</td>
 			</>
 		);
-	}
+	};
 }

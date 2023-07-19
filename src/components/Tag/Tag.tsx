@@ -1,29 +1,24 @@
 import React from 'react';
 
-export enum TagVariant
-{
+export enum TagVariant {
 	Enabled,
 	Disabled,
 	Success,
 	Warning,
-	Danger
+	Danger,
 }
 
-interface ITagProps
-{
+interface ITagProps {
 	label?: string;
 	variant?: TagVariant;
 	className?: string;
 	style?: React.CSSProperties;
 }
 
-export class Tag extends React.Component<ITagProps>
-{
-	public render = () =>
-	{
+export class Tag extends React.Component<ITagProps> {
+	public render = () => {
 		let colorStyle: string = '';
-		switch( this.props.variant )
-		{
+		switch (this.props.variant) {
 			case TagVariant.Disabled:
 				colorStyle = 'text-base-100 bg-base-600';
 				break;
@@ -51,5 +46,5 @@ export class Tag extends React.Component<ITagProps>
 				</span>
 			</>
 		);
-	}
+	};
 }

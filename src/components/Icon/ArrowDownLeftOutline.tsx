@@ -1,10 +1,8 @@
 import React from 'react';
 import { IIconProps } from './IIconProps';
 
-export class ArrowDownLeftOutline extends React.Component<IIconProps>
-{
-	public render = () =>
-	{
+export class ArrowDownLeftOutline extends React.Component<IIconProps> {
+	public render = () => {
 		return (
 			<>
 				<svg
@@ -17,10 +15,9 @@ export class ArrowDownLeftOutline extends React.Component<IIconProps>
 					<path
 						strokeLinecap='round'
 						strokeLinejoin='round'
-						d='M19.5 4.5l-15 15m0 0h11.25m-11.25 0V8.25'>
-					</path>
+						d='M19.5 4.5l-15 15m0 0h11.25m-11.25 0V8.25'></path>
 				</svg>
 			</>
 		);
-	}
+	};
 }

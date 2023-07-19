@@ -1,15 +1,12 @@
 import React from 'react';
 
-interface IModalHeaderProps
-{
+interface IModalHeaderProps {
 	style?: React.CSSProperties;
 	children?: React.ReactNode;
 }
 
-export class ModalHeader extends React.Component<IModalHeaderProps>
-{
-	public render = () =>
-	{
+export class ModalHeader extends React.Component<IModalHeaderProps> {
+	public render = () => {
 		return (
 			<>
 				<div
@@ -19,5 +16,5 @@ export class ModalHeader extends React.Component<IModalHeaderProps>
 				</div>
 			</>
 		);
-	}
+	};
 }

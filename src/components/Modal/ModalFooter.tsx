@@ -1,15 +1,12 @@
 import React from 'react';
 
-interface IModalFooterProps
-{
+interface IModalFooterProps {
 	style?: React.CSSProperties;
 	children?: React.ReactNode;
 }
 
-export class ModalFooter extends React.Component<IModalFooterProps>
-{
-	public render = () =>
-	{
+export class ModalFooter extends React.Component<IModalFooterProps> {
+	public render = () => {
 		return (
 			<>
 				<div
@@ -19,5 +16,5 @@ export class ModalFooter extends React.Component<IModalFooterProps>
 				</div>
 			</>
 		);
-	}
+	};
 }

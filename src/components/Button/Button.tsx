@@ -1,15 +1,13 @@
 import React from 'react';
 
-export enum ButtonVariant
-{
+export enum ButtonVariant {
 	Normal,
 	Success,
 	Warning,
-	Danger
+	Danger,
 }
 
-interface IButtonProps
-{
+interface IButtonProps {
 	label?: string;
 	variant?: ButtonVariant;
 	disabled?: boolean;
@@ -18,30 +16,30 @@ interface IButtonProps
 	style?: React.CSSProperties;
 }
 
-export class Button extends React.Component<IButtonProps>
-{
-	public render = () =>
-	{
+export class Button extends React.Component<IButtonProps> {
+	public render = () => {
 		let colorStyle: string = '';
-		switch( this.props.variant )
-		{
+		switch (this.props.variant) {
 			case ButtonVariant.Success:
-				colorStyle = 'bg-green-600 hover:bg-green-500 focus:bg-green-500 active:bg-green-600 focus:shadow-outline-green-600';
+				colorStyle =
+					'bg-green-600 hover:bg-green-500 focus:bg-green-500 active:bg-green-600 focus:shadow-outline-green-600';
 				break;
 			case ButtonVariant.Warning:
-				colorStyle = 'bg-yellow-600 hover:bg-yellow-500 focus:bg-yellow-500 active:bg-yellow-600 focus:shadow-outline-yellow-600';
+				colorStyle =
+					'bg-yellow-600 hover:bg-yellow-500 focus:bg-yellow-500 active:bg-yellow-600 focus:shadow-outline-yellow-600';
 				break;
 			case ButtonVariant.Danger:
-				colorStyle = 'bg-red-600 hover:bg-red-500 focus:bg-red-500 active:bg-red-600 focus:shadow-outline-red-600';
+				colorStyle =
+					'bg-red-600 hover:bg-red-500 focus:bg-red-500 active:bg-red-600 focus:shadow-outline-red-600';
 				break;
 			case ButtonVariant.Normal:
 			default:
-				colorStyle = 'bg-primary-600 hover:bg-primary-500 focus:bg-primary-500 active:bg-primary-600 focus:shadow-outline-primary-600';
+				colorStyle =
+					'bg-primary-600 hover:bg-primary-500 focus:bg-primary-500 active:bg-primary-600 focus:shadow-outline-primary-600';
 				break;
 		}
 
-		if( this.props.disabled )
-		{
+		if (this.props.disabled) {
 			colorStyle = 'bg-base-600';
 		}
 
@@ -56,5 +54,5 @@ export class Button extends React.Component<IButtonProps>
 				</button>
 			</>
 		);
-	}
+	};
 }

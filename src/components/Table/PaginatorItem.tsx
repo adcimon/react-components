@@ -1,17 +1,14 @@
 import React from 'react';
 
-interface IPaginatorItemProps
-{
+interface IPaginatorItemProps {
 	index: number;
 	selected?: boolean;
 	onClick?: () => void;
 }
 
-export class PaginatorItem extends React.Component<IPaginatorItemProps>
-{
-	public render = () =>
-	{
-		const colorStyle: string = (this.props.selected) ? 'text-white bg-primary-600' : 'hover:bg-primary-900';
+export class PaginatorItem extends React.Component<IPaginatorItemProps> {
+	public render = () => {
+		const colorStyle: string = this.props.selected ? 'text-white bg-primary-600' : 'hover:bg-primary-900';
 
 		return (
 			<>
@@ -24,5 +21,5 @@ export class PaginatorItem extends React.Component<IPaginatorItemProps>
 				</li>
 			</>
 		);
-	}
+	};
 }

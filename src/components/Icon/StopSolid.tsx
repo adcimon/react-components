@@ -1,10 +1,8 @@
 import React from 'react';
 import { IIconProps } from './IIconProps';
 
-export class StopSolid extends React.Component<IIconProps>
-{
-	public render = () =>
-	{
+export class StopSolid extends React.Component<IIconProps> {
+	public render = () => {
 		return (
 			<>
 				<svg
@@ -15,10 +13,9 @@ export class StopSolid extends React.Component<IIconProps>
 					<path
 						clipRule='evenodd'
 						fillRule='evenodd'
-						d='M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z'>
-					</path>
+						d='M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z'></path>
 				</svg>
 			</>
 		);
-	}
+	};
 }

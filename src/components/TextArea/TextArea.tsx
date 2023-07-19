@@ -1,23 +1,20 @@
 import React from 'react';
 
-export enum TextAreaVariant
-{
+export enum TextAreaVariant {
 	Info,
 	Warning,
 	Valid,
-	Invalid
+	Invalid,
 }
 
-export enum TextAreaResize
-{
+export enum TextAreaResize {
 	None,
 	Horizontal,
 	Vertical,
-	Both
+	Both,
 }
 
-interface ITextAreaProps
-{
+interface ITextAreaProps {
 	label?: string;
 	defaultValue?: string | number | readonly string[] | undefined;
 	value?: string | number | readonly string[] | undefined;
@@ -33,20 +30,19 @@ interface ITextAreaProps
 	style?: React.CSSProperties;
 }
 
-export class TextArea extends React.Component<ITextAreaProps>
-{
-	public render = () =>
-	{
+export class TextArea extends React.Component<ITextAreaProps> {
+	public render = () => {
 		let colorStyle: string = '';
 		let tipStyle: string = '';
-		switch( this.props.variant )
-		{
+		switch (this.props.variant) {
 			case TextAreaVariant.Warning:
-				colorStyle = 'border-yellow-500 hover:border-yellow-400 focus:border-yellow-500 focus:shadow-outline-yellow-500';
+				colorStyle =
+					'border-yellow-500 hover:border-yellow-400 focus:border-yellow-500 focus:shadow-outline-yellow-500';
 				tipStyle = 'text-yellow-500';
 				break;
 			case TextAreaVariant.Valid:
-				colorStyle = 'border-green-700 hover:border-green-600 focus:border-green-700 focus:shadow-outline-green-700';
+				colorStyle =
+					'border-green-700 hover:border-green-600 focus:border-green-700 focus:shadow-outline-green-700';
 				tipStyle = 'text-green-500';
 				break;
 			case TextAreaVariant.Invalid:
@@ -55,25 +51,23 @@ export class TextArea extends React.Component<ITextAreaProps>
 				break;
 			case TextAreaVariant.Info:
 			default:
-				colorStyle = 'border-base-600 hover:border-primary-500 focus:border-primary-600 focus:shadow-outline-primary-600';
+				colorStyle =
+					'border-base-600 hover:border-primary-500 focus:border-primary-600 focus:shadow-outline-primary-600';
 				tipStyle = 'text-base-400';
 				break;
 		}
 
-		if( this.props.disabled )
-		{
+		if (this.props.disabled) {
 			colorStyle = 'border-base-600';
-			tipStyle = 'text-base-400';		
+			tipStyle = 'text-base-400';
 		}
 
-		if( this.props.readOnly )
-		{
+		if (this.props.readOnly) {
 			colorStyle = 'border-base-600';
 		}
 
 		let resize: string = '';
-		switch( this.props.resize )
-		{
+		switch (this.props.resize) {
 			case TextAreaResize.Horizontal:
 				resize = 'resize-x';
 				break;
@@ -94,10 +88,7 @@ export class TextArea extends React.Component<ITextAreaProps>
 				<label
 					className={`${this.props.className} inline-block mt-4 text-sm`}
 					style={this.props.style}>
-					<span
-						className='block text-base-400'>
-						{this.props.label}
-					</span>
+					<span className='block text-base-400'>{this.props.label}</span>
 					<textarea
 						defaultValue={this.props.defaultValue}
 						value={this.props.value}
@@ -106,14 +97,13 @@ export class TextArea extends React.Component<ITextAreaProps>
 						disabled={this.props.disabled}
 						readOnly={this.props.readOnly}
 						onChange={this.props.onChange}
-						className={`block w-full h-full mt-1 px-2 py-2 text-sm text-base-300 bg-base-700 border-1 rounded ${colorStyle} focus:outline-none transition-colors duration-150 ${resize} textarea`}>
-					</textarea>
+						className={`block w-full h-full mt-1 px-2 py-2 text-sm text-base-300 bg-base-700 border-1 rounded ${colorStyle} focus:outline-none transition-colors duration-150 ${resize} textarea`}></textarea>
 					<span
-						className={`block ${(typeof this.props.tip === 'string') ? 'h-4': ''} m-1 text-xs ${tipStyle}`}>
+						className={`block ${typeof this.props.tip === 'string' ? 'h-4' : ''} m-1 text-xs ${tipStyle}`}>
 						{this.props.tip}
 					</span>
 				</label>
 			</>
 		);
-	}
+	};
 }

@@ -5,8 +5,7 @@ import { ModalBody } from './ModalBody';
 import { ModalFooter } from './ModalFooter';
 import { Button, ButtonVariant } from '../Button/Button';
 
-interface IDialogModalProps
-{
+interface IDialogModalProps {
 	visible: boolean;
 	title?: string;
 	onAccept?: () => void;
@@ -15,33 +14,29 @@ interface IDialogModalProps
 	children?: React.ReactNode;
 }
 
-export class DialogModal extends React.Component<IDialogModalProps>
-{
-	public render = () =>
-	{
+export class DialogModal extends React.Component<IDialogModalProps> {
+	public render = () => {
 		return (
 			<>
 				<Modal
 					visible={this.props.visible}
 					style={this.props.style}>
-					<ModalHeader>
-						{this.props.title}
-					</ModalHeader>
-					<ModalBody>
-						{this.props.children}
-					</ModalBody>
+					<ModalHeader>{this.props.title}</ModalHeader>
+					<ModalBody>{this.props.children}</ModalBody>
 					<ModalFooter>
 						<Button
 							label='Accept'
 							variant={ButtonVariant.Success}
-							onClick={this.props.onAccept}/>
+							onClick={this.props.onAccept}
+						/>
 						<Button
 							label='Cancel'
 							variant={ButtonVariant.Danger}
-							onClick={this.props.onCancel}/>
+							onClick={this.props.onCancel}
+						/>
 					</ModalFooter>
 				</Modal>
 			</>
 		);
-	}
+	};
 }

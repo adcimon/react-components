@@ -1,10 +1,8 @@
 import React from 'react';
 import { IIconProps } from './IIconProps';
 
-export class Square2StackOutline extends React.Component<IIconProps>
-{
-	public render = () =>
-	{
+export class Square2StackOutline extends React.Component<IIconProps> {
+	public render = () => {
 		return (
 			<>
 				<svg
@@ -14,11 +12,9 @@ export class Square2StackOutline extends React.Component<IIconProps>
 					strokeWidth='2'
 					fill='none'
 					style={this.props.style}>
-					<path
-						d='M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z'>
-					</path>
+					<path d='M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z'></path>
 				</svg>
 			</>
 		);
-	}
+	};
 }

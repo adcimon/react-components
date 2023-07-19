@@ -1,15 +1,12 @@
 import React from 'react';
 
-interface IModalBodyProps
-{
+interface IModalBodyProps {
 	style?: React.CSSProperties;
 	children?: React.ReactNode;
 }
 
-export class ModalBody extends React.Component<IModalBodyProps>
-{
-	public render = () =>
-	{
+export class ModalBody extends React.Component<IModalBodyProps> {
+	public render = () => {
 		return (
 			<>
 				<div
@@ -19,5 +16,5 @@ export class ModalBody extends React.Component<IModalBodyProps>
 				</div>
 			</>
 		);
-	}
+	};
 }

@@ -1,16 +1,13 @@
 import React from 'react';
 
-interface IListProps
-{
+interface IListProps {
 	className?: string;
 	style?: React.CSSProperties;
 	children?: React.ReactNode;
 }
 
-export class List extends React.Component<IListProps>
-{
-	public render = () =>
-	{
+export class List extends React.Component<IListProps> {
+	public render = () => {
 		return (
 			<>
 				<ul
@@ -20,5 +17,5 @@ export class List extends React.Component<IListProps>
 				</ul>
 			</>
 		);
-	}
+	};
 }

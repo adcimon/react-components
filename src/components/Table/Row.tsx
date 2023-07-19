@@ -1,16 +1,13 @@
 import React from 'react';
 
-interface IRowProps
-{
+interface IRowProps {
 	className?: string;
 	style?: React.CSSProperties;
 	children?: React.ReactNode;
 }
 
-export class Row extends React.Component<IRowProps>
-{
-	public render = () =>
-	{
+export class Row extends React.Component<IRowProps> {
+	public render = () => {
 		return (
 			<>
 				<tr
@@ -20,5 +17,5 @@ export class Row extends React.Component<IRowProps>
 				</tr>
 			</>
 		);
-	}
+	};
 }

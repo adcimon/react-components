@@ -1,8 +1,7 @@
 import React from 'react';
 import { ICardState } from './ICardState';
 
-interface IDataCardProps
-{
+interface IDataCardProps {
 	title?: string;
 	icon?: React.ReactNode;
 	scale?: boolean;
@@ -13,28 +12,25 @@ interface IDataCardProps
 	children?: React.ReactNode;
 }
 
-export class DataCard extends React.Component<IDataCardProps, ICardState>
-{
-	constructor( props: IDataCardProps )
-	{
+export class DataCard extends React.Component<IDataCardProps, ICardState> {
+	constructor(props: IDataCardProps) {
 		super(props);
 		this.state = { hover: false };
 	}
 
-	private handleMouseEnter = () =>
-	{
+	private handleMouseEnter = () => {
 		this.setState({ hover: true });
-	}
+	};
 
-	private handleMouseLeave = () =>
-	{
+	private handleMouseLeave = () => {
 		this.setState({ hover: false });
-	}
+	};
 
-	public render = () =>
-	{
-		const clickableStyle: string = (this.props.onClick) ? 'hover:border-primary-600 transition-transform duration-300 ease-out cursor-pointer' : '';
-		const animationStyle: string = (this.state.hover && this.props.scale && this.props.onClick) ? 'scale-105' : '';
+	public render = () => {
+		const clickableStyle: string = this.props.onClick
+			? 'hover:border-primary-600 transition-transform duration-300 ease-out cursor-pointer'
+			: '';
+		const animationStyle: string = this.state.hover && this.props.scale && this.props.onClick ? 'scale-105' : '';
 
 		return (
 			<>
@@ -48,17 +44,11 @@ export class DataCard extends React.Component<IDataCardProps, ICardState>
 						{this.props.icon}
 					</div>
 					<div>
-						<p
-							className='mb-2 text-sm font-medium text-base-400'>
-							{this.props.title}
-						</p>
-						<p
-							className='text-lg font-semibold text-base-200'>
-							{this.props.children}
-						</p>
+						<p className='mb-2 text-sm font-medium text-base-400'>{this.props.title}</p>
+						<p className='text-lg font-semibold text-base-200'>{this.props.children}</p>
 					</div>
 				</div>
 			</>
 		);
-	}
+	};
 }

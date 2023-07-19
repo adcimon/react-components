@@ -1,10 +1,8 @@
 import React from 'react';
 import { IIconProps } from './IIconProps';
 
-export class XMarkOutline extends React.Component<IIconProps>
-{
-	public render = () =>
-	{
+export class XMarkOutline extends React.Component<IIconProps> {
+	public render = () => {
 		return (
 			<>
 				<svg
@@ -17,10 +15,9 @@ export class XMarkOutline extends React.Component<IIconProps>
 					<path
 						strokeLinecap='round'
 						strokeLinejoin='round'
-						d='M6 18L18 6M6 6l12 12'>
-					</path>
+						d='M6 18L18 6M6 6l12 12'></path>
 				</svg>
 			</>
 		);
-	}
+	};
 }

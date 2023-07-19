@@ -1,10 +1,8 @@
 import React from 'react';
 import { IIconProps } from './IIconProps';
 
-export class CheckOutline extends React.Component<IIconProps>
-{
-	public render = () =>
-	{
+export class CheckOutline extends React.Component<IIconProps> {
+	public render = () => {
 		return (
 			<>
 				<svg
@@ -17,10 +15,9 @@ export class CheckOutline extends React.Component<IIconProps>
 					<path
 						strokeLinecap='round'
 						strokeLinejoin='round'
-						d='M4.5 12.75l6 6 9-13.5'>
-					</path>
+						d='M4.5 12.75l6 6 9-13.5'></path>
 				</svg>
 			</>
 		);
-	}
+	};
 }
