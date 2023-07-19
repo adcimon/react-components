@@ -10,7 +10,7 @@ def main():
 
 	shutil.copy('package.json', build_dir)
 	shutil.copy('README.md', build_dir)
-	shutil.copy('LICENSE.md', build_dir)
+	shutil.copy('LICENSE', build_dir)
 
 	os.mkdir(build_dir + '/scripts')
 	shutil.copy('./scripts/theme.py', build_dir + '/scripts')
