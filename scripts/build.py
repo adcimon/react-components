@@ -1,21 +1,29 @@
+import sys
 import os
 import subprocess
 import shutil
 
-build_dir = 'dist'
+builddir = 'dist'
 
 def main():
-	subprocess.call('tsc', shell=True)
-	shutil.copytree('src/styles', build_dir + '/styles')
+	abspath = os.path.abspath(sys.argv[0])
+	dirname = os.path.dirname(abspath)
+	rootpath = os.path.abspath(dirname + '/../')
+	print('Root path: ' + rootpath)
+	buildpath = rootpath + '/' + builddir
+	print('Build path: ' + buildpath)
 
-	shutil.copy('package.json', build_dir)
-	shutil.copy('README.md', build_dir)
-	shutil.copy('LICENSE', build_dir)
+	subprocess.call('tsc', cwd=rootpath, shell=True)
+	shutil.copytree(rootpath + '/src/styles', buildpath + '/styles')
 
-	os.mkdir(build_dir + '/scripts')
-	shutil.copy('./scripts/theme.py', build_dir + '/scripts')
-	shutil.copy('./scripts/palette_light.json', build_dir + '/scripts')
-	shutil.copy('./scripts/palette_dark.json', build_dir + '/scripts')
+	shutil.copy(rootpath + '/package.json', buildpath)
+	shutil.copy(rootpath + '/README.md', buildpath)
+	shutil.copy(rootpath + '/LICENSE', buildpath)
+
+	os.mkdir(buildpath + '/scripts')
+	shutil.copy(rootpath + '/scripts/theme.py', buildpath + '/scripts')
+	shutil.copy(rootpath + '/scripts/palette_light.json', buildpath + '/scripts')
+	shutil.copy(rootpath + '/scripts/palette_dark.json', buildpath + '/scripts')
 
 if __name__ == '__main__':
     main()
