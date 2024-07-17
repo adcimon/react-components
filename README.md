@@ -25,14 +25,12 @@ npm login --registry=https://npm.pkg.github.com --scope=@adcimon
 npm publish ./dist
 ```
 
-## Components
+## Usage
 
 Import a component.
 ```
 import { Button } from '@adcimon/react-components';
 ```
-
-## Themes
 
 Import a default theme.
 ```
