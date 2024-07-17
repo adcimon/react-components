@@ -31,7 +31,7 @@
 	"bugs": {
 		"url": "https://github.com/adcimon/react-components/issues"
 	},
-	"homepage": "https://github.com/adcimon/react-components#readme",
+	"homepage": "https://github.com/adcimon/react-components",
 	"devDependencies": {
 		"@types/react": "^18.0.35",
 		"@types/react-dom": "^18.0.11",
